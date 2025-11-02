@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { MessageSquare, Sparkles, TicketCheck } from "lucide-react";
 import { Link } from "react-router-dom";
-import logoFrente from "@/assets/logov2.webp";
-import logoVerso from "@/assets/logo_vetor_2_verso.svg";
+import logoFrente from "@/assets/nova_logo_balao_frente.svg";
+import logoVerso from "@/assets/verso_novo.svg";
 
 const FloatingMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
