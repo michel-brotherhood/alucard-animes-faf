@@ -58,9 +58,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/20 pt-8 text-center">
-          <p className="text-white/60">
+        <div className="border-t border-white/20 pt-8">
+          <p className="text-white/60 text-center mb-2">
             © 2025 Friburgo Geek Natal - Produzido por Alucard Animes. Todos os direitos reservados.
+          </p>
+          <p className="text-white/40 text-center text-sm">
+            Desenvolvido por Michel Brotherhood
           </p>
         </div>
       </div>
