@@ -4,7 +4,7 @@ import FloatingMenu from "@/components/FloatingMenu";
 import FAQ from "@/components/FAQ";
 import MapSection from "@/components/MapSection";
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, Calendar, MapPin, Star } from "lucide-react";
+import { Users, Calendar, MapPin, Star, Instagram, Facebook } from "lucide-react";
 import alucardLogo from "@/assets/alucard-animes-logo.png";
 
 const stats = [
@@ -156,18 +156,39 @@ const OEvento = () => {
                 <h3 className="text-3xl font-black text-accent mb-4">
                   Produção: Alucard Animes
                 </h3>
-                <p className="text-white/90 text-lg mb-4">
+                <p className="text-white/90 text-lg mb-6">
                   Alucard Animes é uma produtora de eventos especializada no universo geek, otaku e gamer! 
                   Criamos experiências incríveis com shows, cosplay, k-pop, torneios, feira geek, oficinas e muito mais.
                 </p>
-                <a 
-                  href="https://www.alucardanimes.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-block text-accent hover:text-accent/80 font-bold text-lg underline"
-                >
-                  🌐 www.alucardanimes.com
-                </a>
+                <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mb-6">
+                  <a 
+                    href="https://www.alucardanimes.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block bg-primary hover:bg-primary/90 text-white font-bold text-lg px-8 py-3 rounded-full shadow-lg transition-all hover:scale-105"
+                  >
+                    Conhecer mais sobre a Alucard Animes
+                  </a>
+                </div>
+                <div className="flex items-center justify-center md:justify-start gap-4">
+                  <span className="text-white/90 font-semibold">Siga-nos:</span>
+                  <a 
+                    href="https://www.instagram.com/alucardanimes/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-white/10 p-3 rounded-full hover:bg-accent hover:scale-110 transition-all"
+                  >
+                    <Instagram className="w-6 h-6 text-white" />
+                  </a>
+                  <a 
+                    href="https://www.facebook.com/AlucardAnimes" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-white/10 p-3 rounded-full hover:bg-accent hover:scale-110 transition-all"
+                  >
+                    <Facebook className="w-6 h-6 text-white" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
