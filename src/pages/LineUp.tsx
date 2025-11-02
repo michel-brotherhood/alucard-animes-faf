@@ -84,7 +84,7 @@ const LineUp = () => {
                               className="flex items-center gap-2"
                             >
                               <Instagram className="w-4 h-4" />
-                              Seguir no Instagram
+                              Conhecer mais
                             </a>
                           </Button>
                         )}
