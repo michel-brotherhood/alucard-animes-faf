@@ -308,7 +308,7 @@ const Contato = () => {
                 </p>
                 <div className="flex justify-center">
                   <a
-                    href="https://api.whatsapp.com/send/?phone=5521977498015&text=Contato+ANIME+NIKITY&type=phone_number&app_absent=0"
+                    href="https://api.whatsapp.com/send/?phone=5521977498015&text=Olá!+Gostaria+de+informações+sobre+o+Friburgo+Geek&type=phone_number"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-6 py-3 rounded-lg transition-colors"
