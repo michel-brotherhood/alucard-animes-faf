@@ -116,7 +116,7 @@ const TicketCards = () => {
                 <Button 
                   variant="skewed" 
                   className={`w-full text-sm md:text-lg py-5 md:py-6 rounded-2xl ${
-                    ticket.isVip ? 'bg-gradient-to-r from-destructive to-primary hover:from-primary hover:to-destructive shadow-lg hover:shadow-destructive/50' : ''
+                    ticket.isVip ? 'bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-500 hover:from-amber-500 hover:to-yellow-400 shadow-lg hover:shadow-yellow-500/50 text-black font-black' : ''
                   }`}
                 >
                   QUERO ESTE
