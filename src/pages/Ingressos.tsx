@@ -7,58 +7,51 @@ import { Check, ShoppingCart } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const Ingressos = () => {
-  const tickets = [
+const tickets = [
     {
-      name: "BASIC",
-      price: "39,55",
-      badge: "último lote",
+      name: "INGRESSO ÚNICO",
+      price: "35,00",
+      badge: "promocional",
       features: [
-        "Acesso aos 2 dias de evento",
-        "Acesso a todas as atrações",
-        "Acesso à área de alimentação",
-        "Acesso ao espaço de cosplay"
+        "Acesso ao evento das 12h às 18h",
+        "Todas as atrações incluídas",
+        "Grátis para crianças de 0 a 6 anos",
+        "Grátis para idosos acima de 65 anos"
       ]
     },
     {
-      name: "COMBO 2 DIAS",
-      price: "71,19",
-      badge: "último lote",
+      name: "INGRESSO DUPLO",
+      price: "60,00",
+      badge: "promocional",
       popular: false,
       features: [
-        "Acesso aos 2 dias de evento",
+        "2 ingressos para o evento",
         "Acesso a todas as atrações",
-        "Acesso VIP à área de alimentação",
-        "Kit exclusivo de brindes",
-        "Fast pass em filas",
-        "Acesso ao espaço de cosplay"
+        "Economia de R$ 10,00",
+        "Válido para duas pessoas"
       ]
     },
     {
-      name: "Cosplayer",
-      price: "39,55",
-      badge: "último lote",
+      name: "INGRESSO TRIPLO",
+      price: "85,00",
+      badge: "promocional",
       features: [
-        "Acesso aos 2 dias de evento",
-        "Acesso prioritário ao espaço de cosplay",
-        "Participação em concursos",
+        "3 ingressos para o evento",
         "Acesso a todas as atrações",
-        "Acesso à área de alimentação"
+        "Economia de R$ 20,00",
+        "Válido para três pessoas"
       ]
     },
     {
-      name: "VIP FULL",
-      price: "245",
-      badge: "último lote",
+      name: "VIP",
+      price: "130,00",
+      badge: "promocional",
       popular: true,
       features: [
-        "Acesso aos 2 dias de evento",
-        "Acesso VIP a todas as atrações",
-        "Meet & Greet com convidados especiais",
-        "Kit VIP exclusivo de brindes",
-        "Fast pass ilimitado",
-        "Acesso à área VIP lounge",
-        "Estacionamento exclusivo",
-        "Acesso ao espaço de cosplay"
+        "Acesso VIP exclusivo",
+        "Benefícios especiais",
+        "Experiência premium",
+        "Brindes exclusivos"
       ]
     }
   ];
@@ -73,7 +66,7 @@ const Ingressos = () => {
             COMO VAI SER A SUA AVENTURA?
           </h1>
           <p className="text-base md:text-lg text-foreground/80 max-w-3xl mx-auto">
-            Compare os ingressos e encontre a opção perfeita para a saga que você quer viver no <span className="font-bold text-primary">Anime Nikity 25</span>.
+            Compare os ingressos e encontre a opção perfeita para a aventura que você quer viver no <span className="font-bold text-primary">Friburgo Geek Natal</span>.
             <br className="hidden sm:block" />
             <span className="block sm:inline mt-2 sm:mt-0">Todos os ingressos possuem disponibilidade limitada.</span>
           </p>
@@ -139,12 +132,12 @@ const Ingressos = () => {
           <CardContent className="px-4 md:px-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
               {[
-                "Shows ao vivo",
-                "Competições de cosplay",
-                "Painéis com convidados",
-                "Área de jogos",
-                "Artistas convidados",
-                "Stands de merchandising"
+                "Arena Gamer free play",
+                "Campeonatos e competições",
+                "Beat Saber VR",
+                "Cine Anime",
+                "Animekê e K-POP",
+                "Estandes de vendas geek"
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2">
                   <Check className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />

@@ -4,54 +4,56 @@ import { Check } from "lucide-react";
 
 const tickets = [
   {
-    name: "BASIC",
-    price: "39,55",
-    badge: "último lote",
+    name: "INGRESSO ÚNICO",
+    price: "35,00",
+    badge: "promocional",
     badgeColor: "bg-accent text-primary",
     features: [
-      "Acesso a um dos dias incríveis no Anime Nikity",
-      "Pulseira Colecionável",
-      "Grátis para crianças menores de 6 anos",
+      "Acesso ao evento das 12h às 18h",
+      "Todas as atrações incluídas",
+      "Grátis para crianças de 0 a 6 anos",
+      "Grátis para idosos acima de 65 anos",
     ],
-    note: "¹ Valor referente à meia-entrada",
+    note: "Meia-entrada com 1kg de alimento não perecível",
   },
   {
-    name: "combo 2 DIAS",
-    price: "71,19",
-    badge: "último lote",
+    name: "INGRESSO DUPLO",
+    price: "60,00",
+    badge: "promocional",
     badgeColor: "bg-accent text-primary",
     features: [
-      "Acesso aos 2 dias incríveis no Anime Nikity",
-      "Pulseira Colecionável",
-      "Grátis para crianças menores de 6 anos",
+      "2 ingressos para o evento",
+      "Acesso a todas as atrações",
+      "Economia de R$ 10,00",
+      "Válido para duas pessoas",
     ],
-    note: "¹ Valor referente à meia-entrada",
+    note: "Meia-entrada com 1kg de alimento não perecível",
   },
   {
-    name: "Cosplayer",
-    price: "39,55",
-    badge: "último lote",
+    name: "INGRESSO TRIPLO",
+    price: "85,00",
+    badge: "promocional",
     badgeColor: "bg-accent text-primary",
     features: [
-      "Camarim exclusivo",
-      "Pulseira Colecionável",
-      "Área de fotos exclusiva",
-      "Fila preferencial",
+      "3 ingressos para o evento",
+      "Acesso a todas as atrações",
+      "Economia de R$ 20,00",
+      "Válido para três pessoas",
     ],
-    note: "Meia-entrada garantida!",
+    note: "Meia-entrada com 1kg de alimento não perecível",
   },
   {
-    name: "VIP FULL",
-    price: "245",
-    badge: "último lote",
+    name: "VIP",
+    price: "130,00",
+    badge: "promocional",
     badgeColor: "bg-destructive text-white",
     features: [
-      "Todos os benefícios dos outros ingressos",
       "Acesso VIP exclusivo",
-      "Meet & Greet com convidados",
+      "Benefícios especiais",
+      "Experiência premium",
       "Brindes exclusivos",
     ],
-    note: "Experiência completa!",
+    note: "Experiência completa e diferenciada!",
   },
 ];
 
@@ -64,8 +66,8 @@ const TicketCards = () => {
             COMO VAI SER A SUA AVENTURA?
           </h2>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
-            Compare os ingressos e encontre a opção perfeita para a saga que você quer viver no{" "}
-            <span className="font-bold text-primary">Anime Nikity 25</span>.
+            Compare os ingressos e encontre a opção perfeita para a aventura que você quer viver no{" "}
+            <span className="font-bold text-primary">Friburgo Geek Natal</span>.
           </p>
           <p className="text-sm text-foreground/60 mt-2">
             Todos os ingressos possuem disponibilidade limitada.

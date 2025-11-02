@@ -8,27 +8,27 @@ import {
 const faqs = [
   {
     question: "Como acessar meus ingressos?",
-    answer: "Após a compra, você receberá um e-mail com o link para acessar seus ingressos digitais. Você também pode acessá-los através da área 'Meus Ingressos' no site.",
+    answer: "Após a compra, você receberá um e-mail com o link para acessar seus ingressos digitais. Você também pode acessá-los através da plataforma de compra.",
   },
   {
-    question: "Quais artistas e convidados já estão confirmados?",
-    answer: "Confira a lista completa de artistas e convidados confirmados na seção Line-up do nosso site. A lista é atualizada regularmente!",
+    question: "Qual o horário do evento?",
+    answer: "O Friburgo Geek Natal acontece no domingo, 14 de dezembro de 2025, das 12h às 18h no Sindicato Dos Têxteis.",
   },
   {
-    question: "Quais os benefícios de ser VIP?",
-    answer: "O ingresso VIP Full inclui acesso a áreas exclusivas, meet & greet com convidados, brindes especiais, fila preferencial e muito mais!",
+    question: "Como funciona a meia-entrada?",
+    answer: "Todos que levarem 1kg de alimento não perecível no dia do evento têm direito à meia-entrada. Crianças de 0 a 6 anos e idosos acima de 65 anos têm entrada gratuita.",
   },
   {
-    question: "Como funciona o Meet & Greet?",
-    answer: "Os Meet & Greets são sessões exclusivas onde você pode conhecer seus artistas e dubladores favoritos. Alguns são inclusos no VIP, outros vendidos separadamente.",
+    question: "Quais competições estão confirmadas?",
+    answer: "Campeonatos de Cosplay (8 categorias com R$ 1000 em brindes), K-POP Generations, Animekê (solo e dupla), FIFA 25, Mortal Kombat 1, Street Fighter 6 e Tekken 8. Inscrições no site do evento.",
   },
   {
-    question: "Quem tem direito a meia entrada?",
-    answer: "Estudantes, idosos, pessoas com deficiência e doadores de sangue têm direito à meia-entrada mediante apresentação de documento comprobatório.",
+    question: "O que está incluído no ingresso?",
+    answer: "Acesso à arena gamer com mais de 10 videogames free play, Beat Saber VR, cine anime, board games, wood games, estandes de vendas, área de alimentação e todas as atividades e competições.",
   },
   {
     question: "Formas de pagamento",
-    answer: "Aceitamos cartão de crédito (parcelado em até 12x), PIX e boleto bancário. O pagamento é processado de forma segura através da plataforma Mundo Dream.",
+    answer: "Aceitamos cartão de crédito (parcelado em até 12x), PIX. Também disponível ingresso ZapPix via WhatsApp (21) 97749-8015 sem taxas.",
   },
 ];
 

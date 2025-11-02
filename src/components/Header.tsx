@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import animeNikityLogo from "@/assets/anime-nikity-logo.png";
+import friburgoGeekLogo from "@/assets/friburgo-geek-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,8 +27,8 @@ const Header = () => {
           <div className="flex items-center gap-4 md:gap-12">
             <Link to="/" className="flex items-center hover:opacity-90 transition-opacity">
               <img 
-                src={animeNikityLogo} 
-                alt="Anime Nikity Logo" 
+                src={friburgoGeekLogo} 
+                alt="Friburgo Geek Logo" 
                 className="h-16 md:h-20 w-auto object-contain"
               />
             </Link>
@@ -175,8 +175,8 @@ const Header = () => {
               {/* Logo */}
               <div className="mb-6">
                 <img 
-                  src={animeNikityLogo} 
-                  alt="Anime Nikity" 
+                  src={friburgoGeekLogo} 
+                  alt="Friburgo Geek" 
                   className="h-10 w-auto"
                 />
               </div>

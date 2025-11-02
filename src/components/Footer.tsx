@@ -1,6 +1,6 @@
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
-import animeNikityLogo from "@/assets/anime-nikity-logo.png";
+import friburgoGeekLogo from "@/assets/friburgo-geek-logo.png";
 
 const Footer = () => {
   return (
@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <img src={animeNikityLogo} alt="Anime Nikity" className="h-20 mb-4" />
+            <img src={friburgoGeekLogo} alt="Friburgo Geek" className="h-20 mb-4" />
             <p className="text-white/80">
-              O maior evento de anime do Brasil. Uma experiência inesquecível para todos os fãs!
+              O maior evento geek de Nova Friburgo. Uma experiência inesquecível para todos os fãs!
             </p>
           </div>
 
@@ -45,7 +45,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 pt-8 text-center">
           <p className="text-white/60">
-            © 2026 Anime Nikity. Todos os direitos reservados.
+            © 2025 Friburgo Geek Natal - Produzido por Alucard Animes. Todos os direitos reservados.
           </p>
         </div>
       </div>

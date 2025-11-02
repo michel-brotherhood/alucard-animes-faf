@@ -1,18 +1,18 @@
 import { Check } from "lucide-react";
 
 const features = [
-  "Viver experiências incríveis no maior evento de anime do Brasil",
-  "Curtir o mega palco STAGE com atrações fantásticas",
-  "Pulseira colecionável exclusiva para poder entrar e sair quando quiser",
-  "Participar de shows, competições e muitas atividades no palco STREET",
-  "Jogar muito na Arena Games, incluindo fliperama liberado",
-  "Explorar a Artist Alley e interagir com artistas incríveis",
-  "Ver seus dubladores e influencers preferidos de pertinho",
-  "Andar por espaços temáticos incríveis e imersivos",
-  "Utilizar o camarim cosplay e tudo o que o cosplay space oferece",
-  "Tirar fotos incríveis em nosso estúdio fotográfico",
-  "Conhecer dezenas de lojinhas sensacionais e fazer vááárias comprinhas",
-  "Acessar o melhor food park geek da região",
+  "Arena Gamer com mais de 10 videogames free play",
+  "Beat Saber no Playstation VR",
+  "Cine Anime com super exibição de animes",
+  "Animekê livre para todos",
+  "Board games e Wood Games geek",
+  "Swordplay e atividades interativas",
+  "Estandes de vendas com produtos geeks exclusivos",
+  "Alimentação no local",
+  "Passa ou repassa com Misheru",
+  "Gincanas com brindes incríveis",
+  "Guitarrista Gamer Retrô Rafael",
+  "Campeonatos de Cosplay, K-POP, FIFA 25, Mortal Kombat 1, Street Fighter 6 e Tekken 8",
 ];
 
 const Features = () => {

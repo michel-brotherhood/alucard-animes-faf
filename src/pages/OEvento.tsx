@@ -22,83 +22,102 @@ const OEvento = () => {
             O EVENTO
           </h1>
           <p className="text-xl text-white/90 text-center mb-12">
-            A maior celebração da cultura pop japonesa do Brasil
+            O encontro perfeito para geeks, otakus e gamers em Nova Friburgo
           </p>
 
           {/* Hero Section */}
           <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 mb-12 border-2 border-accent">
             <h2 className="text-3xl md:text-4xl font-black text-accent mb-6">
-              Bem-vindo ao Anime Nikity 2026! ✨
+              Bem-vindo ao Friburgo Geek Natal! 🎄
             </h2>
             <div className="space-y-4 text-white/90 text-lg">
               <p>
-                O <strong className="text-accent">Anime Nikity</strong> é o maior evento de cultura pop 
-                japonesa do Brasil, reunindo milhares de fãs em uma celebração épica de anime, 
-                mangá, games e muito mais!
+                O <strong className="text-accent">Friburgo Geek Natal</strong> é um evento focado no universo 
+                geek, otaku e gamer, produzido pela Alucard Animes. Prepare-se para um dia incrível repleto de 
+                atividades, competições e muita diversão!
               </p>
               <p>
-                Durante <strong className="text-accent">2 dias incríveis</strong>, você terá acesso a 
-                shows espetaculares, competições de cosplay, meet & greets com dubladores famosos, 
-                torneios de games, workshops exclusivos e centenas de expositores.
+                No dia <strong className="text-accent">14 de dezembro, das 12h às 18h</strong>, você terá acesso a 
+                arena gamer com videogames free play, Beat Saber no VR, campeonatos de jogos e cosplay, 
+                animekê, cine anime, e muito mais!
               </p>
               <p>
-                Seja você um otaku de longa data ou alguém descobrindo esse universo incrível, 
-                o Anime Nikity tem algo especial para você!
+                Seja você um geek veterano ou alguém descobrindo esse universo incrível, 
+                o Friburgo Geek Natal tem algo especial para você!
               </p>
             </div>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {stats.map((stat) => (
-              <Card key={stat.label} className="bg-accent border-0 text-center">
-                <CardContent className="p-6">
-                  <stat.icon className="w-12 h-12 text-secondary mx-auto mb-4" />
-                  <div className="text-4xl font-black text-secondary mb-2">{stat.value}</div>
-                  <div className="text-secondary/80 font-bold">{stat.label}</div>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="bg-accent border-0 text-center">
+              <CardContent className="p-6">
+                <Users className="w-12 h-12 text-secondary mx-auto mb-4" />
+                <div className="text-4xl font-black text-secondary mb-2">1 Dia</div>
+                <div className="text-secondary/80 font-bold">De pura diversão</div>
+              </CardContent>
+            </Card>
+            <Card className="bg-accent border-0 text-center">
+              <CardContent className="p-6">
+                <Calendar className="w-12 h-12 text-secondary mx-auto mb-4" />
+                <div className="text-4xl font-black text-secondary mb-2">6 horas</div>
+                <div className="text-secondary/80 font-bold">Das 12h às 18h</div>
+              </CardContent>
+            </Card>
+            <Card className="bg-accent border-0 text-center">
+              <CardContent className="p-6">
+                <MapPin className="w-12 h-12 text-secondary mx-auto mb-4" />
+                <div className="text-4xl font-black text-secondary mb-2">10+</div>
+                <div className="text-secondary/80 font-bold">Videogames free play</div>
+              </CardContent>
+            </Card>
+            <Card className="bg-accent border-0 text-center">
+              <CardContent className="p-6">
+                <Star className="w-12 h-12 text-secondary mx-auto mb-4" />
+                <div className="text-4xl font-black text-secondary mb-2">8</div>
+                <div className="text-secondary/80 font-bold">Campeonatos</div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Destaques */}
           <div className="space-y-6">
             <Card className="bg-primary/50 backdrop-blur-sm border-2 border-accent/50">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-black text-accent mb-4">🎭 Para Todos os Gostos</h3>
+                <h3 className="text-2xl font-black text-accent mb-4">🎮 Arena Gamer</h3>
                 <p className="text-white/90">
-                  Shounen, shoujo, seinen, josei - todos os gêneros representados! Desde os clássicos 
-                  até os lançamentos mais recentes, celebramos toda a diversidade do universo anime.
+                  Mais de 10 videogames free play, Beat Saber no Playstation VR, jogos retrô e muito mais! 
+                  Teste suas habilidades em campeonatos de FIFA 25, Mortal Kombat 1, Street Fighter 6 e Tekken 8.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-secondary/50 backdrop-blur-sm border-2 border-accent/50">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-black text-accent mb-4">🎨 Arte & Criatividade</h3>
+                <h3 className="text-2xl font-black text-accent mb-4">🎭 Cosplay & K-POP</h3>
                 <p className="text-white/90">
-                  Conheça artistas incríveis na Artist Alley, participe de workshops de desenho e 
-                  técnicas de cosplay, e se inspire com os trabalhos de profissionais da indústria.
+                  Participe do campeonato de cosplay com 8 categorias e mil reais em brindes! 
+                  Mostre seu talento no campeonato de K-POP Generations e no Animekê solo ou dupla.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-primary/50 backdrop-blur-sm border-2 border-accent/50">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-black text-accent mb-4">🌟 Comunidade & Amizades</h3>
+                <h3 className="text-2xl font-black text-accent mb-4">🎬 Cine Anime & Atividades</h3>
                 <p className="text-white/90">
-                  Faça parte de algo maior! Conecte-se com outros fãs, faça novas amizades e 
-                  compartilhe sua paixão por anime em um ambiente acolhedor e divertido.
+                  Assista super exibições de animes, jogue board games e wood games geek, 
+                  participe de gincanas com brindes, passa ou repassa com Misheru e muito mais!
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-secondary/50 backdrop-blur-sm border-2 border-accent/50">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-black text-accent mb-4">🎮 Games & Competições</h3>
+                <h3 className="text-2xl font-black text-accent mb-4">🛍️ Estandes & Alimentação</h3>
                 <p className="text-white/90">
-                  Participe de torneios emocionantes, teste suas habilidades no fliperama liberado, 
-                  e descubra os lançamentos mais recentes da indústria de games japoneses.
+                  Explore estandes com produtos geeks exclusivos e aproveite a área de alimentação 
+                  completa no local. Tudo que você precisa para um dia perfeito!
                 </p>
               </CardContent>
             </Card>
