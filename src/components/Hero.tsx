@@ -1,4 +1,4 @@
-import heroVideo from "@/assets/hero-video.mp4";
+import heroVideo from "@/assets/hero-video-new.mp4";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 
