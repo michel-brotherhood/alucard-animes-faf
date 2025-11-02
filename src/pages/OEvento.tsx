@@ -84,41 +84,47 @@ const OEvento = () => {
           <div className="space-y-6">
             <Card className="bg-primary/50 backdrop-blur-sm border-2 border-accent/50">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-black text-accent mb-4">🎮 Arena Gamer</h3>
-                <p className="text-white/90">
-                  Mais de 10 videogames free play, Beat Saber no Playstation VR, jogos retrô e muito mais! 
-                  Teste suas habilidades em campeonatos de FIFA 25, Mortal Kombat 1, Street Fighter 6 e Tekken 8.
-                </p>
+                <h3 className="text-2xl font-black text-accent mb-4">🎮 Arena Gamer & Retrô Games</h3>
+                <ul className="text-white/90 space-y-2 list-disc list-inside">
+                  <li>Arena Gamer com mais de 10 videogames free play</li>
+                  <li>Beat Saber no Playstation VR</li>
+                  <li>Retrô Games para relembrar clássicos inesquecíveis</li>
+                  <li>Campeonatos de FIFA 25, Mortal Kombat 1, Street Fighter 6 e Tekken 8</li>
+                </ul>
               </CardContent>
             </Card>
 
             <Card className="bg-secondary/50 backdrop-blur-sm border-2 border-accent/50">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-black text-accent mb-4">🎭 Cosplay & K-POP</h3>
-                <p className="text-white/90">
-                  Participe do campeonato de cosplay com 8 categorias e mil reais em brindes! 
-                  Mostre seu talento no campeonato de K-POP Generations e no Animekê solo ou dupla.
-                </p>
+                <h3 className="text-2xl font-black text-accent mb-4">🎭 Cosplay, K-POP & Animeke</h3>
+                <ul className="text-white/90 space-y-2 list-disc list-inside">
+                  <li>Campeonato de Cosplay com 8 categorias e mil reais em brindes</li>
+                  <li>Campeonato de K-POP Generations</li>
+                  <li>Animeke livre para todos - solo ou dupla</li>
+                </ul>
               </CardContent>
             </Card>
 
             <Card className="bg-primary/50 backdrop-blur-sm border-2 border-accent/50">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-black text-accent mb-4">🎬 Cine Anime & Atividades</h3>
-                <p className="text-white/90">
-                  Assista super exibições de animes, jogue board games e wood games geek, 
-                  participe de gincanas com brindes, passa ou repassa com Misheru e muito mais!
-                </p>
+                <h3 className="text-2xl font-black text-accent mb-4">🎬 Cine Anime & Atividades Interativas</h3>
+                <ul className="text-white/90 space-y-2 list-disc list-inside">
+                  <li>Cine Anime com super exibição de animes</li>
+                  <li>Board Games e Wood Games (jogos de madeira GEEK)</li>
+                  <li>Swordplay para testar suas habilidades</li>
+                  <li>Gincanas com brindes incríveis</li>
+                  <li>Passa ou repassa com Misheru</li>
+                </ul>
               </CardContent>
             </Card>
 
             <Card className="bg-secondary/50 backdrop-blur-sm border-2 border-accent/50">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-black text-accent mb-4">🛍️ Estandes & Alimentação</h3>
-                <p className="text-white/90">
-                  Explore estandes com produtos geeks exclusivos e aproveite a área de alimentação 
-                  completa no local. Tudo que você precisa para um dia perfeito!
-                </p>
+                <ul className="text-white/90 space-y-2 list-disc list-inside">
+                  <li>Estandes de vendas com produtos geeks exclusivos</li>
+                  <li>Alimentação completa no local</li>
+                </ul>
               </CardContent>
             </Card>
           </div>

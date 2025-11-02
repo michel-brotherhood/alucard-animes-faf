@@ -4,7 +4,7 @@ import FloatingMenu from "@/components/FloatingMenu";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star, Instagram } from "lucide-react";
-import raphaelImage from "@/assets/raphael-freitas.webp";
+import raphaelVideo from "@/assets/raphael-performance.mp4";
 import eventLogo from "@/assets/friburgo-geek-icon.png";
 
 const guests = [
@@ -15,12 +15,12 @@ const guests = [
       { 
         name: "Raphael Freitas", 
         role: "O Guitarrista Raphael Freitas e seu projeto Me and the Machine farão um show épico com músicas de games retrô que marcaram gerações — tudo ao som de uma guitarra eletrizante! Se você é fã de nostalgia, games e boa música, esse momento é imperdível!",
-        image: raphaelImage,
+        video: raphaelVideo,
         instagram: "https://www.instagram.com/meand_themachine/"
-      },
-      { name: "", role: "Em breve...", logo: true },
-      { name: "", role: "Em breve...", logo: true },
-      { name: "", role: "Em breve...", logo: true },
+      } as const,
+      { name: "", role: "Em breve...", logo: true } as const,
+      { name: "", role: "Em breve...", logo: true } as const,
+      { name: "", role: "Em breve...", logo: true } as const,
     ],
   },
 ];
@@ -53,15 +53,18 @@ const LineUp = () => {
                   {category.items.map((item, index) => (
                     <Card key={index} className="bg-white/10 backdrop-blur-sm border-accent/30 hover:border-accent transition-all">
                       <CardContent className="p-6 text-center">
-                        {item.image ? (
-                          <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full border-4 border-primary shadow-lg shadow-primary/50">
-                            <img 
-                              src={item.image} 
-                              alt={item.name}
+                        {'video' in item && item.video ? (
+                          <div className="w-full max-w-md mx-auto mb-4 overflow-hidden rounded-xl border-4 border-primary shadow-lg shadow-primary/50">
+                            <video 
+                              src={item.video} 
+                              controls
                               className="w-full h-full object-cover"
-                            />
+                              poster=""
+                            >
+                              Seu navegador não suporta o elemento de vídeo.
+                            </video>
                           </div>
-                        ) : item.logo ? (
+                        ) : 'logo' in item && item.logo ? (
                           <div className="w-32 h-32 mx-auto mb-4 flex items-center justify-center">
                             <img 
                               src={eventLogo} 
@@ -72,7 +75,7 @@ const LineUp = () => {
                         ) : null}
                         {item.name && <h3 className="text-xl font-bold text-white mb-2">{item.name}</h3>}
                         <p className="text-white/70 text-sm mb-3">{item.role}</p>
-                        {item.instagram && (
+                        {'instagram' in item && item.instagram && (
                           <Button
                             asChild
                             className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold shadow-lg shadow-primary/30"

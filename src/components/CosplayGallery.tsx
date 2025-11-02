@@ -1,4 +1,6 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import {
   Carousel,
   CarouselContent,
@@ -32,7 +34,7 @@ const CosplayGallery = () => {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            GALERIA DE COSPLAYS
+            CONCURSO DE COSPLAYS
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Confira momentos incríveis dos nossos eventos anteriores
@@ -65,6 +67,14 @@ const CosplayGallery = () => {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+
+        <div className="mt-12 text-center">
+          <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg shadow-primary/30">
+            <Link to="/concursos/cosplay">
+              VER DETALHES DO CONCURSO
+            </Link>
+          </Button>
+        </div>
       </div>
     </section>
   );
