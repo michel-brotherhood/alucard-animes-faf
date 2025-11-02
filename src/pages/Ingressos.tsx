@@ -9,44 +9,59 @@ import { Check, ShoppingCart } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const Ingressos = () => {
-const tickets = [
+  const tickets = [
     {
       name: "INGRESSO ÚNICO",
       price: "35,00",
-      badge: "PROMOCIONAL",
+      badge: "promocional",
+      badgeColor: "bg-accent text-primary",
       features: [
-        "Entrada no evento"
-      ]
+        "Acesso ao evento das 12h às 18h",
+        "Todas as atrações incluídas",
+      ],
+      note: "Meia-entrada com 1kg de alimento não perecível",
     },
     {
       name: "INGRESSO DUPLO",
       price: "60,00",
-      badge: "PROMOCIONAL",
-      popular: false,
+      badge: "promocional",
+      badgeColor: "bg-accent text-primary",
       features: [
-        "Entrada no evento para duas pessoas"
-      ]
+        "Benefícios do único...",
+        "2 ingressos para o evento",
+        "Válido para duas pessoas",
+        "Economia de R$ 10,00",
+      ],
+      note: "Meia-entrada com 1kg de alimento não perecível",
     },
     {
       name: "INGRESSO TRIPLO",
       price: "85,00",
-      badge: "PROMOCIONAL",
+      badge: "promocional",
+      badgeColor: "bg-accent text-primary",
       features: [
-        "Entrada no evento para três pessoas"
-      ]
+        "Benefícios do único...",
+        "3 ingressos para o evento",
+        "Válido para três pessoas",
+        "Economia de R$ 20,00",
+      ],
+      note: "Meia-entrada com 1kg de alimento não perecível",
     },
     {
       name: "VIP",
       price: "130,00",
-      badge: "PROMOCIONAL",
-      popular: true,
+      badge: "promocional",
+      badgeColor: "bg-destructive text-white",
       features: [
         "Entrada antecipada (a partir das 11:00h, sem filas)",
         "Acesso ao camarim dos artistas/dubladores/youtubers",
-        "Crachá exclusivo",
-        "R$ 130,00 em produtos nos estandes Marikanime Shop e Konoha Lanches"
-      ]
-    }
+        "Crachá exclusivo VIP",
+        "R$ 30,00 em produtos nos estandes Marikanime Shop",
+        "R$ 30,00 em produtos no Konoha Lanches",
+      ],
+      note: "Experiência completa e diferenciada!",
+      isVip: true,
+    },
   ];
 
   return (
@@ -66,62 +81,67 @@ const tickets = [
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {tickets.map((ticket, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {tickets.map((ticket) => (
             <Card 
-              key={index} 
-              className={`relative overflow-hidden transition-all hover:shadow-2xl ${
-                ticket.popular ? 'ring-2 ring-primary shadow-xl lg:scale-105' : ''
+              key={ticket.name} 
+              className={`relative overflow-hidden border-2 transition-all ${
+                ticket.isVip 
+                  ? 'md:col-span-2 lg:col-span-1 bg-gradient-to-br from-destructive/20 via-primary/10 to-accent/20 border-primary hover:border-destructive hover:shadow-[0_0_30px_rgba(var(--primary),0.5)] hover:scale-105' 
+                  : 'hover:border-primary hover:shadow-2xl'
               }`}
             >
-              {ticket.popular && (
-                <div className="absolute top-3 -right-2 z-10 rotate-12">
-                  <Badge className="bg-destructive text-white text-xs px-3 py-1 shadow-lg">MAIS VENDIDO</Badge>
-                </div>
+              {ticket.isVip && (
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-destructive to-primary animate-shimmer" 
+                     style={{ backgroundSize: '200% 100%' }}></div>
               )}
-              
-              <CardHeader className="text-center pb-4 pt-8">
-                <CardTitle className="text-2xl md:text-3xl font-black text-foreground mb-2">
+              <CardHeader className="text-center pb-4">
+                <h3 className={`text-2xl font-black mb-2 ${ticket.isVip ? 'text-transparent bg-clip-text bg-gradient-to-r from-primary to-destructive' : 'text-secondary'}`}>
                   {ticket.name}
-                </CardTitle>
-                <CardDescription className="text-xs md:text-sm">A partir de</CardDescription>
-                <div className="mt-2">
-                  <span className="text-4xl md:text-5xl font-black text-primary">
-                    {ticket.price.split(',')[0]}
-                  </span>
-                  <span className="text-xl md:text-2xl font-bold text-primary">,{ticket.price.split(',')[1]}</span>
+                </h3>
+                <p className="text-sm text-foreground/60 mb-4">A partir de</p>
+                <div className={`text-5xl font-black mb-2 ${ticket.isVip ? 'text-transparent bg-clip-text bg-gradient-to-r from-destructive to-primary' : 'text-primary'}`}>
+                  {ticket.price}
                 </div>
-                <Badge variant="secondary" className="mt-3 bg-accent text-accent-foreground font-bold text-xs">
+                <div className={`inline-block px-4 py-1 rounded-full text-sm font-bold ${ticket.badgeColor}`}>
                   {ticket.badge}
-                </Badge>
+                </div>
               </CardHeader>
-              
-              <CardContent className="space-y-2 px-4 md:px-6">
-                {ticket.features.map((feature, i) => (
-                  <div key={i} className="flex items-start gap-2">
-                    <Check className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-xs md:text-sm text-foreground/80">{feature}</span>
+
+              <CardContent className="space-y-3">
+                {ticket.features.map((feature, index) => (
+                  <div key={index} className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground/80">{feature}</span>
                   </div>
                 ))}
               </CardContent>
-              
-              <CardFooter className="px-3 md:px-6">
-                <a 
-                  href="https://www.uticket.com.br/event/01LD7EIVF0XD8Q/checkout/tickets"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full"
+
+              <CardFooter className="flex flex-col gap-3 px-4">
+                <Button 
+                  variant="skewed" 
+                  className={`w-full text-sm md:text-lg py-5 md:py-6 rounded-2xl ${
+                    ticket.isVip ? 'bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-500 hover:from-amber-500 hover:to-yellow-400 shadow-lg hover:shadow-yellow-500/50 text-white font-black' : ''
+                  }`}
+                  asChild
                 >
-                  <Button 
-                    className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 md:py-6 rounded-full text-sm md:text-lg shadow-lg"
-                  >
-                    <ShoppingCart className="w-4 h-4 md:w-5 md:h-5 mr-1 md:mr-2" />
+                  <a href="https://www.uticket.com.br/event/01LD7EIVF0XD8Q/checkout/tickets" target="_blank" rel="noopener noreferrer">
                     QUERO ESTE
-                  </Button>
-                </a>
+                  </a>
+                </Button>
+                <p className="text-xs text-center text-foreground/60 px-2">{ticket.note}</p>
               </CardFooter>
             </Card>
           ))}
+        </div>
+
+        <div className="mb-12 text-center">
+          <a 
+            href="/ajuda#regras-gerais" 
+            className="inline-flex items-center gap-2 text-lg font-bold text-primary hover:text-secondary transition-colors"
+          >
+            Ver regras gerais dos ingressos
+          </a>
         </div>
 
         <Card className="bg-muted/50 border-primary/20 mx-4">
