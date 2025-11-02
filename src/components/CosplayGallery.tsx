@@ -3,6 +3,10 @@ import cosplay1 from "@/assets/cosplay-1.jpg";
 import cosplay2 from "@/assets/cosplay-2.jpg";
 import cosplay3 from "@/assets/cosplay-3.jpg";
 import cosplay4 from "@/assets/cosplay-4.jpg";
+import cosplay5 from "@/assets/cosplay-5.jpg";
+import cosplay6 from "@/assets/cosplay-6.jpg";
+import cosplay7 from "@/assets/cosplay-7.jpg";
+import cosplay8 from "@/assets/cosplay-8.jpg";
 
 const CosplayGallery = () => {
   const photos = [
@@ -10,6 +14,10 @@ const CosplayGallery = () => {
     { id: 2, src: cosplay2, alt: "Performance de K-pop" },
     { id: 3, src: cosplay3, alt: "Grupo de cosplayers" },
     { id: 4, src: cosplay4, alt: "Cosplay de personagem de videogame" },
+    { id: 5, src: cosplay5, alt: "Cosplay de fantasia com asas" },
+    { id: 6, src: cosplay6, alt: "Cosplayer masculino com espada" },
+    { id: 7, src: cosplay7, alt: "Cosplay steampunk" },
+    { id: 8, src: cosplay8, alt: "Dupla de cosplayers" },
   ];
 
   return (
