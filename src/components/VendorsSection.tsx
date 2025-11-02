@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Store, ShoppingBag, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
+import vendorBooths from "@/assets/vendor-booths.jpg";
 
 const VendorsSection = () => {
   return (
@@ -16,6 +17,18 @@ const VendorsSection = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Produtos geeks exclusivos e muito mais!
           </p>
+        </div>
+
+        {/* Imagem dos Estandes */}
+        <div className="mb-12 max-w-5xl mx-auto">
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+            <img
+              src={vendorBooths}
+              alt="Estandes de vendas com mangás e produtos geek"
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">

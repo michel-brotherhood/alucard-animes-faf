@@ -8,6 +8,7 @@ import mortalKombat from "@/assets/mortal-kombat-1.png";
 import streetFighter from "@/assets/street-fighter-6.png";
 import tekken8 from "@/assets/tekken-8.png";
 import justDance from "@/assets/just-dance.jpg";
+import fifa2025 from "@/assets/fifa-2025.jpg";
 
 const ConcursoVideogames = () => {
   const jogos = [
@@ -25,6 +26,11 @@ const ConcursoVideogames = () => {
       title: "Tekken 8",
       categoria: "Luta",
       image: tekken8,
+    },
+    {
+      title: "FIFA 2025",
+      categoria: "Futebol",
+      image: fifa2025,
     },
     {
       title: "Just Dance",
@@ -86,7 +92,7 @@ const ConcursoVideogames = () => {
           {/* Jogos Disponíveis */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-center mb-8">Jogos Disponíveis</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
               {jogos.map((jogo, index) => (
                 <Card key={index} className="overflow-hidden group hover:scale-105 transition-all duration-300 hover:shadow-2xl">
                   <div className="relative h-80 overflow-hidden">

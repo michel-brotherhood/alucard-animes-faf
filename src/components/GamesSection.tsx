@@ -1,11 +1,12 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Gamepad2, Swords, Music } from "lucide-react";
+import { Gamepad2, Swords, Music, Trophy } from "lucide-react";
 import { Link } from "react-router-dom";
 import mortalKombat from "@/assets/mortal-kombat-1.png";
 import streetFighter from "@/assets/street-fighter-6.png";
 import tekken8 from "@/assets/tekken-8.png";
 import justDance from "@/assets/just-dance.jpg";
+import fifa2025 from "@/assets/fifa-2025.jpg";
 
 const GamesSection = () => {
   const games = [
@@ -31,6 +32,13 @@ const GamesSection = () => {
       gradient: "from-red-600 to-orange-500",
     },
     {
+      title: "FIFA 2025",
+      category: "Futebol",
+      image: fifa2025,
+      icon: Trophy,
+      gradient: "from-green-600 to-emerald-500",
+    },
+    {
       title: "Just Dance",
       category: "Dança",
       image: justDance,
@@ -53,7 +61,7 @@ const GamesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
           {games.map((game, index) => {
             const Icon = game.icon;
             return (
