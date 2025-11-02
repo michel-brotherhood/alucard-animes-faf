@@ -116,8 +116,11 @@ const TicketCards = () => {
                   className={`w-full text-sm md:text-lg py-5 md:py-6 rounded-2xl ${
                     ticket.isVip ? 'bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-500 hover:from-amber-500 hover:to-yellow-400 shadow-lg hover:shadow-yellow-500/50 text-white font-black' : ''
                   }`}
+                  asChild
                 >
-                  QUERO ESTE
+                  <a href="https://www.uticket.com.br/event/01LD7EIVF0XD8Q/checkout/tickets" target="_blank" rel="noopener noreferrer">
+                    QUERO ESTE
+                  </a>
                 </Button>
                 <p className="text-xs text-center text-foreground/60 px-2">{ticket.note}</p>
               </CardFooter>
