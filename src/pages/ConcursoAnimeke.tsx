@@ -116,65 +116,71 @@ const ConcursoAnimeke = () => {
             </Card>
           </div>
 
-          {/* Regras Principais */}
+          {/* Regras Completas */}
           <Card className="bg-white/10 backdrop-blur-sm border-2 border-accent mb-12">
             <CardHeader>
-              <CardTitle className="text-white text-2xl font-black">📋 Regras Principais</CardTitle>
+              <CardTitle className="text-white text-2xl font-black">📋 REGULAMENTO COMPLETO DO CAMPEONATO ANIMEKÊ</CardTitle>
             </CardHeader>
-            <CardContent className="text-white/90 space-y-4">
+            <CardContent className="text-white/90 space-y-6">
               <div>
-                <h4 className="font-bold text-accent mb-2">Músicas Aceitas:</h4>
-                <ul className="list-disc list-inside space-y-1 text-sm">
-                  <li>Canções-tema ou músicas originais de animes</li>
-                  <li>Músicas de live-actions (tokusatsu)</li>
-                  <li>Vocaloid</li>
-                  <li>Games (somente música original do jogo)</li>
+                <h4 className="font-bold text-accent mb-3 text-lg">1) INTRODUÇÃO</h4>
+                <ul className="list-disc list-inside space-y-2 text-sm">
+                  <li><strong>1.1</strong> – O campeonato de Animekê no Friburgo Geek é um concurso cultural de canto onde são apresentadas apenas canções tema ou músicas originais de animes, live-actions (tokusatsu), vocaloid, games (somente música original do jogo, fica vetada as músicas de jogos musicais – tais como Guitar Hero, Ouedan, Rock Band e demais jogos deste gênero); a música deve ser de um idioma real, podendo ser cantada no idioma original ou na sua versão adaptada para diferentes países</li>
+                  <li><strong>1.2</strong> – O concurso é aberto para pessoas com idade superior a 03 anos; sendo vetada a participação de parceiros do evento, jurados, equipe organizadora do evento</li>
+                  <li><strong>1.3</strong> – O participante concorda em liberar o uso da sua imagem para fins de divulgação</li>
                 </ul>
               </div>
 
               <div>
-                <h4 className="font-bold text-accent mb-2">Quem pode participar:</h4>
-                <ul className="list-disc list-inside space-y-1 text-sm">
-                  <li>Pessoas com idade superior a 3 anos</li>
-                  <li>Vetada a participação de parceiros, jurados e equipe organizadora</li>
+                <h4 className="font-bold text-accent mb-3 text-lg">2) INSCRIÇÃO</h4>
+                <ul className="list-disc list-inside space-y-2 text-sm">
+                  <li><strong>2.1</strong> – No mínimo 03 participantes e no máximo 10 participantes por dia; caso não alcance o número mínimo de inscritos, o concurso será cancelado; mesmo sem a quantidade mínima de inscritos para a realização do concurso, os participantes poderão se apresentar, valendo um brinde de participação</li>
+                  <li><strong>2.2</strong> – Pré-inscrição: o participante preencherá o formulário na página do evento e no dia do evento confirmará a inscrição na área Karaokê; a pré-inscrição garantirá a vaga até 02 (duas) horas após a abertura do evento</li>
+                  <li><strong>2.3</strong> – As inscrições são realizadas na central de inscrições até 01 (uma) hora antes do início do concurso; havendo desistência de algum inscrito, a vaga ficará aberta até encerrar o período de inscrições</li>
+                  <li><strong>2.4</strong> – No ato da inscrição, o participante:
+                    <ul className="list-none ml-6 mt-1 space-y-1">
+                      <li><strong>2.4.1</strong> – Deve apresentar documento com foto original, próprio ou de um responsável</li>
+                      <li><strong>2.4.2</strong> – Deve entregar um pen drive com o Playback (áudio sem voz, apenas com a parte instrumental) gravado em formato .MP3. Haverá no dia do evento uma lista de Playbacks disponíveis, porém não serão aceitas reclamações se forem usados os Playbacks desta lista ou más gravações dos participantes</li>
+                      <li><strong>2.4.3</strong> – Tem a opção de entregar 03 (três) cópias impressas da tradução da letra da música ou de sua letra quando cantada na versão em português; sendo concedido um bônus de 0,5 (meio) ponto na média final</li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
 
               <div>
-                <h4 className="font-bold text-accent mb-2">Requisitos:</h4>
-                <ul className="list-disc list-inside space-y-1 text-sm">
-                  <li>Mínimo de 3 e máximo de 10 participantes por dia</li>
-                  <li>Pen drive com Playback (áudio sem voz) em formato MP3</li>
-                  <li>3 cópias impressas da tradução da letra concede bônus de 0,5 ponto</li>
-                  <li>Reunir 30 minutos antes do concurso ao lado do palco</li>
+                <h4 className="font-bold text-accent mb-3 text-lg">3) APRESENTAÇÃO</h4>
+                <ul className="list-disc list-inside space-y-2 text-sm">
+                  <li><strong>3.1</strong> – Os participantes devem se reunir 30 (trinta) minutos antes do concurso, ao lado do palco, para serem organizados em fila e manter-se nela até o momento de sua apresentação; o participante que não estiver presente quando chegar sua vez será imediatamente desclassificado</li>
+                  <li><strong>3.2</strong> – O participante deve entrar e sair do palco pelos lados indicados pela organização do evento</li>
+                  <li><strong>3.3</strong> – Em caso de apresentação com qualquer tipo de ofensas, constrangimentos ou apelo sexual, que firam as disposições criminais, o participante será desclassificado, e ele ou seus responsáveis legais responderão criminalmente por seus atos</li>
+                  <li><strong>3.4</strong> – O evento proverá um microfone e sistema de som adequado para realizar a apresentação; e não disponibilizará tomada ou qualquer instalação elétrica auxiliar no palco</li>
+                  <li><strong>3.5</strong> – É vetado o uso de objetos/matérias como fonte sonora (instrumentos musicais, sinos, caixas de som, buzinas, geradores de ruído, etc.) e qualquer banner ou faixa divulgando algum site ou empresa, sem autorização da organização do evento</li>
+                  <li><strong>3.6</strong> – É vetado o porte e uso de itens e objetos que possam representar perigo às pessoas presentes</li>
+                  <li><strong>3.7</strong> – Caso haja problemas de responsabilidade do evento (como falhas na aparelhagem de som ou queda de força) e o participante for prejudicado, ele poderá reiniciar sua apresentação ou repeti-la no final do concurso</li>
                 </ul>
               </div>
 
               <div>
-                <h4 className="font-bold text-accent mb-2">Proibições:</h4>
-                <ul className="list-disc list-inside space-y-1 text-sm">
-                  <li>Uso de objetos/materiais como fonte sonora (instrumentos musicais)</li>
-                  <li>Porte de itens perigosos</li>
+                <h4 className="font-bold text-accent mb-3 text-lg">4) CRITÉRIOS DE AVALIAÇÃO E DESEMPATE</h4>
+                <ul className="list-disc list-inside space-y-2 text-sm">
+                  <li><strong>4.1</strong> – A banca de jurados será composta de até 03 (três) juízes sendo: musicistas, vocalistas com experiência comprovada, intérpretes e entusiastas; cujas notas serão consideradas plenas e também inquestionáveis</li>
+                  <li><strong>4.2</strong> – Cada um receberá nota única de 05 (cinco) a 10 (dez), podendo haver números fracionados de no máximo 0,1. A nota 00 (zero) será dada apenas aos participantes desclassificados</li>
+                  <li><strong>4.3</strong> – O cálculo da nota é realizado através de uma média aritmética dos quesitos</li>
+                  <li><strong>4.4</strong> – Os quesitos de avaliação são: afinação, tempo, dicção/pronúncia, respiração, potência vocal, finalizações, vibrato, impostação vocal, interpretação/coreografia, postura vocal. Será levada em conta a dificuldade técnica da música executada pelo candidato</li>
+                  <li><strong>4.5</strong> – Em caso de empate nas notas finais dos primeiros colocados e sujeitos a premiação caberá ao júri e a coordenação do evento a decidir o desempate</li>
                 </ul>
               </div>
 
               <div>
-                <h4 className="font-bold text-accent mb-2">Critérios de Avaliação:</h4>
-                <ul className="list-disc list-inside space-y-1 text-sm">
-                  <li>Afinação</li>
-                  <li>Tempo</li>
-                  <li>Dicção/Pronúncia</li>
-                  <li>Potência Vocal</li>
-                  <li>Interpretação/Coreografia</li>
-                  <li>Dificuldade técnica da música</li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="font-bold text-accent mb-2">Premiação:</h4>
-                <ul className="list-disc list-inside space-y-1 text-sm">
-                  <li>Só haverá premiação se o vencedor alcançar nota final superior a 7,0</li>
-                  <li>1º Lugar: Medalha + Kit de produtos dos apoiadores</li>
+                <h4 className="font-bold text-accent mb-3 text-lg">5) VENCEDORES, PREMIAÇÃO E DEMAIS OBSERVAÇÕES</h4>
+                <ul className="list-disc list-inside space-y-2 text-sm">
+                  <li><strong>5.1</strong> – Só haverá premiação e classificação se o participante com maior pontuação alcançar uma nota final maior que 7,0 (sete)</li>
+                  <li><strong>5.2</strong> – O prêmio para o vencedor:
+                    <ul className="list-none ml-6 mt-1 space-y-1">
+                      <li><strong>5.2.1</strong> – 01º lugar: kit de produtos dos apoiadores do evento. O vencedor será anunciado no palco e o prêmio será entregue no ato; A premiação não será enviada pelo correio ou entregue após o evento</li>
+                    </ul>
+                  </li>
+                  <li><strong>5.3</strong> – Os casos omissos no regulamento serão analisados pela coordenação do evento e a sua decisão será soberana e inquestionável</li>
                 </ul>
               </div>
             </CardContent>

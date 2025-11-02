@@ -62,15 +62,15 @@ const ConcursoVideogames = () => {
               <CardContent className="pt-6">
                 <Clock className="w-12 h-12 text-primary mx-auto mb-3" />
                 <h3 className="font-bold text-lg mb-2">Horário</h3>
-                <p className="text-muted-foreground text-sm">Durante todo evento</p>
+                <p className="text-muted-foreground text-sm">12:00 às 17:00</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:scale-105 transition-all duration-300">
+            <Card className="text-center hover:scale-105 transition-all duration-300 bg-accent/10 border-2 border-accent">
               <CardContent className="pt-6">
-                <Users className="w-12 h-12 text-primary mx-auto mb-3" />
-                <h3 className="font-bold text-lg mb-2">Participação</h3>
-                <p className="text-muted-foreground text-sm">Aberto a todos</p>
+                <Users className="w-12 h-12 text-accent mx-auto mb-3" />
+                <h3 className="font-bold text-lg mb-2">Taxa de Inscrição</h3>
+                <p className="text-muted-foreground text-sm font-bold">R$ 15,00 por jogo</p>
               </CardContent>
             </Card>
 
@@ -112,13 +112,27 @@ const ConcursoVideogames = () => {
               <CardTitle className="text-3xl font-bold text-center">Regras e Informações</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
+              <div className="bg-accent/10 rounded-lg p-6 border-2 border-accent">
+                <h4 className="font-bold text-xl mb-3 text-accent">⏰ Horário dos Campeonatos</h4>
+                <p className="text-muted-foreground mb-2 text-lg">
+                  Os campeonatos começarão às <strong className="text-accent">12:00 horas</strong> e terminarão às <strong className="text-accent">17:00 horas</strong>
+                </p>
+              </div>
+
+              <div className="bg-primary/10 rounded-lg p-6 border-2 border-primary">
+                <h4 className="font-bold text-xl mb-3 text-primary">💰 Taxa de Inscrição</h4>
+                <p className="text-muted-foreground text-lg">
+                  <strong className="text-primary">Atenção!</strong> Taxa de inscrição: <strong className="text-primary">R$ 15,00</strong> para cada jogo, pagas no dia do evento na arena gamer
+                </p>
+              </div>
+
               <div>
                 <h4 className="font-bold text-xl mb-3 text-primary">Formato do Campeonato</h4>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                   <li>Todos os campeonatos são disputados no formato <strong>Mata-Mata</strong></li>
-                  <li>As inscrições são realizadas no local do evento</li>
-                  <li>Cada participante pode se inscrever em múltiplos jogos</li>
-                  <li>Horários específicos serão divulgados no dia do evento</li>
+                  <li>As inscrições são realizadas no local do evento na arena gamer</li>
+                  <li>Cada participante pode se inscrever em múltiplos jogos (pagando a taxa para cada)</li>
+                  <li>Horários específicos de cada jogo serão divulgados no dia do evento</li>
                 </ul>
               </div>
 
@@ -143,10 +157,12 @@ const ConcursoVideogames = () => {
 
               <div className="bg-accent/10 rounded-lg p-6 border-2 border-accent">
                 <h4 className="font-bold text-xl mb-3 text-accent">📝 Como Participar</h4>
-                <p className="text-muted-foreground">
-                  As inscrições serão abertas no dia do evento, diretamente na área de games. 
-                  Chegue cedo para garantir sua vaga, pois o número de participantes é limitado!
-                </p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>As inscrições serão abertas no dia do evento, diretamente na arena gamer</li>
+                  <li>Chegue cedo para garantir sua vaga, pois o número de participantes é limitado</li>
+                  <li>Traga R$ 15,00 em dinheiro para pagar a taxa de inscrição de cada jogo</li>
+                  <li>Você pode se inscrever em quantos jogos quiser (pagando a taxa individual para cada)</li>
+                </ul>
               </div>
             </CardContent>
           </Card>
