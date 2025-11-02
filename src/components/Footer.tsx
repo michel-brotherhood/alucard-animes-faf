@@ -33,11 +33,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-white/80">
                 <Clock className="w-4 h-4 text-accent" />
-                <span>10h às 22h</span>
+                <span>12:00 às 18:00 horas</span>
               </li>
               <li className="flex items-center gap-2 text-white/80">
                 <MapPin className="w-4 h-4 text-accent" />
-                <span>SESC Nova Friburgo</span>
+                <span>Sindicato Dos Têxteis</span>
               </li>
             </ul>
           </div>
