@@ -82,7 +82,7 @@ const TicketCards = () => {
               key={ticket.name} 
               className={`relative overflow-hidden border-2 transition-all ${
                 ticket.isVip 
-                  ? 'md:col-span-2 lg:col-span-1 bg-gradient-to-br from-destructive/20 via-primary/10 to-accent/20 border-primary hover:border-destructive hover:shadow-[0_0_30px_rgba(var(--primary),0.5)] animate-pulse-slow hover:scale-105' 
+                  ? 'md:col-span-2 lg:col-span-1 bg-gradient-to-br from-destructive/20 via-primary/10 to-accent/20 border-primary hover:border-destructive hover:shadow-[0_0_30px_rgba(var(--primary),0.5)] hover:scale-105' 
                   : 'hover:border-primary hover:shadow-2xl'
               }`}
             >
@@ -98,7 +98,7 @@ const TicketCards = () => {
                 <div className={`text-5xl font-black mb-2 ${ticket.isVip ? 'text-transparent bg-clip-text bg-gradient-to-r from-destructive to-primary' : 'text-primary'}`}>
                   {ticket.price}
                 </div>
-                <div className={`inline-block px-4 py-1 rounded-full text-sm font-bold ${ticket.badgeColor} ${ticket.isVip ? 'animate-pulse' : ''}`}>
+                <div className={`inline-block px-4 py-1 rounded-full text-sm font-bold ${ticket.badgeColor}`}>
                   {ticket.badge}
                 </div>
               </CardHeader>
