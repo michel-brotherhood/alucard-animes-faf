@@ -155,7 +155,7 @@ const Header = () => {
           />
           
           {/* Menu Drawer */}
-          <div className="lg:hidden fixed inset-y-0 right-0 w-full max-w-sm bg-primary shadow-2xl z-50 animate-slide-in-right overflow-y-auto">
+          <div className="lg:hidden fixed inset-0 w-full bg-primary shadow-2xl z-50 animate-slide-in-right overflow-y-auto">
             <div className="p-5 pb-6">
               {/* Close Button */}
               <button 
