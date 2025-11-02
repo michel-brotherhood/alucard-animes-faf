@@ -1,4 +1,11 @@
 import { Card } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import cosplay1 from "@/assets/cosplay-1.jpg";
 import cosplay2 from "@/assets/cosplay-2.jpg";
 import cosplay3 from "@/assets/cosplay-3.jpg";
@@ -32,23 +39,32 @@ const CosplayGallery = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {photos.map((photo) => (
-            <Card 
-              key={photo.id} 
-              className="overflow-hidden group cursor-pointer hover:shadow-2xl transition-all duration-300"
-            >
-              <div className="relative overflow-hidden aspect-[4/3]">
-                <img
-                  src={photo.src}
-                  alt={photo.alt}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-            </Card>
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-7xl mx-auto"
+        >
+          <CarouselContent>
+            {photos.map((photo) => (
+              <CarouselItem key={photo.id} className="md:basis-1/2 lg:basis-1/3">
+                <Card className="overflow-hidden group cursor-pointer hover:shadow-2xl transition-all duration-300">
+                  <div className="relative overflow-hidden aspect-[4/3]">
+                    <img
+                      src={photo.src}
+                      alt={photo.alt}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </section>
   );
