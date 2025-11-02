@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { MessageSquare, Sparkles, TicketCheck } from "lucide-react";
 import { Link } from "react-router-dom";
-import floatingIcon from "@/assets/floating-icon.svg";
-import closeIcon from "@/assets/close-icon.svg";
+import estrelaNatalFrente from "@/assets/estrela_natalfrente.svg";
+import estrelaNatalVerso from "@/assets/estrela_natalverso.svg";
 
 const FloatingMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -127,13 +127,13 @@ const FloatingMenu = () => {
           <div className="relative flex items-center justify-center w-full h-full">
             {isOpen ? (
               <img 
-                src={closeIcon} 
+                src={estrelaNatalVerso} 
                 alt="Fechar" 
-                className="w-10 h-10 md:w-12 md:h-12 transition-all duration-300"
+                className="w-14 h-14 md:w-16 md:h-16 transition-all duration-300"
               />
             ) : (
               <img 
-                src={floatingIcon} 
+                src={estrelaNatalFrente} 
                 alt="Menu" 
                 className="w-14 h-14 md:w-16 md:h-16 transition-transform duration-300 group-hover:scale-110"
               />
