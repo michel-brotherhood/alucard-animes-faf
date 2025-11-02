@@ -7,6 +7,7 @@ import Features from "@/components/Features";
 import MapSection from "@/components/MapSection";
 import CosplayGallery from "@/components/CosplayGallery";
 import GamesSection from "@/components/GamesSection";
+import ActivitySection from "@/components/ActivitySection";
 import ConcursosCallToAction from "@/components/ConcursosCallToAction";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -26,6 +27,7 @@ const Index = () => {
       <MapSection />
       <CosplayGallery />
       <GamesSection />
+      <ActivitySection />
       <ConcursosCallToAction />
       <FAQ />
       <Footer />
