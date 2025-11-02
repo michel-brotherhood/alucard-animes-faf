@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const tickets = [
   {
@@ -129,12 +130,12 @@ const TicketCards = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <a 
-            href="/ajuda#regras-gerais" 
+          <Link 
+            to="/ajuda#regras-gerais" 
             className="inline-flex items-center gap-2 text-lg font-bold text-primary hover:text-secondary transition-colors"
           >
             Ver regras gerais dos ingressos
-          </a>
+          </Link>
         </div>
       </div>
     </section>

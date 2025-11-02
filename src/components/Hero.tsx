@@ -1,6 +1,7 @@
 import heroVideo from "@/assets/hero-video-new.mp4";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -28,7 +29,7 @@ const Hero = () => {
                   className="text-sm md:text-base px-6 md:px-10 py-5 md:py-6 rounded-2xl"
                   asChild
                 >
-                  <a href="/ingressos">Comprar Agora</a>
+                  <Link to="/ingressos">Comprar Agora</Link>
                 </Button>
                 <Button 
                   variant="outline" 
@@ -36,7 +37,7 @@ const Hero = () => {
                   className="font-semibold text-sm md:text-base px-6 md:px-10 py-5 md:py-6 rounded-2xl border-2"
                   asChild
                 >
-                  <a href="/o-evento">Explorar</a>
+                  <Link to="/o-evento">Explorar</Link>
                 </Button>
               </div>
               
