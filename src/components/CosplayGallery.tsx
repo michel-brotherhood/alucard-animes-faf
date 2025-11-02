@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useRef } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -21,6 +22,10 @@ import cosplay11 from "@/assets/cosplay-11.jpg";
 import cosplay12 from "@/assets/cosplay-12.jpg";
 
 const CosplayGallery = () => {
+  const autoplayPlugin = useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false })
+  );
+
   const photos = [
     { id: 1, src: cosplay1, alt: "Cosplayer em convenção de anime" },
     { id: 2, src: cosplay2, alt: "Performance de K-pop" },
@@ -53,12 +58,7 @@ const CosplayGallery = () => {
             align: "start",
             loop: true,
           }}
-          plugins={[
-            Autoplay({
-              delay: 3000,
-              stopOnInteraction: false,
-            }),
-          ]}
+          plugins={[autoplayPlugin.current]}
           className="w-full max-w-7xl mx-auto"
         >
           <CarouselContent>
