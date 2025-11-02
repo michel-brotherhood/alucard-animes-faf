@@ -10,6 +10,13 @@ const FloatingMenu = () => {
   const menuItems = [
     {
       icon: MessageSquare,
+      label: "Contato",
+      color: "bg-gradient-to-br from-blue-400 to-blue-600",
+      href: "/contato",
+      external: false,
+    },
+    {
+      icon: MessageSquare,
       label: "WhatsApp",
       color: "bg-gradient-to-br from-green-400 to-green-600",
       href: "https://api.whatsapp.com/send/?phone=5521977498015&text=Olá!+Gostaria+de+informações+sobre+o+Friburgo+Geek&type=phone_number",
@@ -20,20 +27,6 @@ const FloatingMenu = () => {
       label: "Ingressos",
       color: "bg-gradient-to-br from-pink-400 to-pink-600",
       href: "/ingressos",
-      external: false,
-    },
-    {
-      icon: Sparkles,
-      label: "Concursos",
-      color: "bg-gradient-to-br from-purple-400 to-purple-600",
-      href: "/experiencias",
-      external: false,
-    },
-    {
-      icon: MessageSquare,
-      label: "Contato",
-      color: "bg-gradient-to-br from-blue-400 to-blue-600",
-      href: "/contato",
       external: false,
     },
   ];
@@ -57,10 +50,9 @@ const FloatingMenu = () => {
         <div className="relative w-14 h-14 md:w-16 md:h-16">
         {menuItems.map((item, index) => {
           const positions = [
-            { x: 0, y: -90 },   // WhatsApp
-            { x: 0, y: -150 },  // Ingressos
-            { x: 0, y: -210 },  // Concursos
-            { x: 0, y: -270 },  // Contato
+            { x: 0, y: -90 },   // Contato
+            { x: 0, y: -160 },  // WhatsApp
+            { x: 0, y: -230 },  // Ingressos
           ];
           
           const pos = positions[index] || { x: 0, y: -90 };
