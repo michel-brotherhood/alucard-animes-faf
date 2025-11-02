@@ -82,7 +82,7 @@ const ConcursoCosplay = () => {
               <CardContent className="pt-6 text-center">
                 <Trophy className="w-12 h-12 text-accent mx-auto mb-3" />
                 <h3 className="text-white font-bold text-lg mb-2">Premiação</h3>
-                <p className="text-white/80 text-sm">Medalhas + até R$ 100 em brindes</p>
+                <p className="text-white/80 text-sm">Medalhas + até R$ 125 em brindes</p>
               </CardContent>
             </Card>
             
@@ -111,48 +111,251 @@ const ConcursoCosplay = () => {
             </Card>
           </div>
 
-          {/* Regras Principais */}
+          {/* Regulamento Completo */}
           <Card className="bg-white/10 backdrop-blur-sm border-2 border-accent mb-12">
             <CardHeader>
-              <CardTitle className="text-white text-2xl font-black">📋 Regras Principais</CardTitle>
+              <CardTitle className="text-white text-2xl font-black">📋 REGULAMENTO COMPLETO</CardTitle>
+              <p className="text-white/70 text-sm mt-2">
+                O presente regulamento objetiva-se a proporcionar o bom andamento do concurso, 
+                assegurando a igualdade de condições a todos os participantes inscritos.
+              </p>
             </CardHeader>
-            <CardContent className="text-white/90 space-y-4">
+            <CardContent className="text-white/90 space-y-6">
+              
+              {/* 1. DISPOSIÇÕES GERAIS */}
               <div>
-                <h4 className="font-bold text-accent mb-2">Quem pode participar:</h4>
-                <ul className="list-disc list-inside space-y-1 text-sm">
-                  <li>Pessoas a partir de 6 anos de idade</li>
-                  <li>Crianças de 6 a 12 anos devem estar acompanhadas do responsável</li>
-                  <li>Adolescentes de 13 a 17 anos precisam de autorização legal</li>
-                  <li>Cosplayers de quaisquer personagens fictícios de acesso público</li>
+                <h3 className="font-black text-accent text-xl mb-3">1. DISPOSIÇÕES GERAIS</h3>
+                
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-bold text-white mb-2">1.1. Podem concorrer:</h4>
+                    <ul className="list-disc list-inside space-y-1 text-sm ml-4">
+                      <li>Pessoas a partir de 6 anos de idade</li>
+                      <li>Crianças de 6 a 12 anos somente com a presença do responsável</li>
+                      <li>Adolescentes de 13 a 17 anos, somente com autorização do pai, mãe ou responsável legal</li>
+                      <li>Cosplayers de quaisquer personagens fictícios de acesso público, criados em qualquer país</li>
+                      <li>Cosplayers de celebridades com traje oficial e conhecido do artista</li>
+                      <li>Cosplayers de mídia adulta, desde que não firam nenhuma das regras</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">1.2. Não poderão concorrer:</h4>
+                    <ul className="list-disc list-inside space-y-1 text-sm ml-4">
+                      <li>Organizadores, juízes, coordenadores, palestrantes, professores de workshops, estandistas e staffs do concurso cosplay no evento</li>
+                      <li>Personagens originários de fanzines, fóruns e blogs</li>
+                      <li>Cosplays originais e visuais</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">1.3. Cosplays "genéricos":</h4>
+                    <p className="text-sm ml-4">Apenas de classes genéricas que são mais importantes como grupo do que indivíduos específicos desse mesmo grupo (Stormtroopers, classes de MMORPG, etc.) não receberão nota.</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">1.4. Mau comportamento:</h4>
+                    <p className="text-sm ml-4">O participante que interferir no bom andamento do concurso, descumprindo regras, sendo desrespeitoso ou atrasando a programação do evento, está sujeito a ser proibido de participar de concursos realizados nos eventos organizados pelo Grupo CVG MANGÁ por até 1 (um) ano.</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">1.5. Ficha de inscrição:</h4>
+                    <p className="text-sm ml-4">Preencher de forma completa todos os campos solicitados antes de entregar seja aqui pelo site ou na área cosplay. Ao assiná-la, os participantes declaram estar de pleno acordo com as regras do concurso.</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">1.6. Direitos de imagem:</h4>
+                    <p className="text-sm ml-4">Uma vez inscritos no concurso, os cosplayers cedem os direitos de todas as suas imagens e sons (vídeo e fotografias) relacionados ao concurso e evento, sem compensações financeiras por seu uso para fins promocionais e de divulgação em quaisquer mídias.</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">1.7. Entrada antecipada:</h4>
+                    <p className="text-sm ml-4">Todo cosplay devidamente cadastrado aqui pelo site poderá entrar antecipadamente no evento em até meia hora antes.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 2. AS CATEGORIAS */}
+              <div>
+                <h3 className="font-black text-accent text-xl mb-3">2. AS CATEGORIAS</h3>
+                
+                <div className="space-y-3">
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-white mb-2">2.1. Desfile Livre</h4>
+                    <p className="text-sm">Somente para pessoas a partir dos 13 anos de idade. O participante tem avaliada apenas a roupa, individualmente, parando diante dos juízes sobre o palco. Pode interpretar o personagem, mas não é necessária nenhuma apresentação.</p>
+                  </div>
+
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-white mb-2">2.2. Desfile Infantil Livre</h4>
+                    <p className="text-sm">Somente para pessoas até os 12 anos de idade. O participante tem avaliada apenas a roupa, individualmente, parando diante dos juízes sobre o palco. Pode interpretar o personagem, mas não é necessária nenhuma apresentação.</p>
+                  </div>
+
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-white mb-2">2.3. Desfile Anime</h4>
+                    <p className="text-sm">Somente para personagens de animes. O participante tem avaliada apenas a roupa, individualmente, parando diante dos juízes sobre o palco. Pode interpretar o personagem, mas não é necessária nenhuma apresentação.</p>
+                  </div>
+
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-white mb-2">2.4. Desfile Geek</h4>
+                    <p className="text-sm">Somente para personagens de desenhos ocidentais, HQs, filmes ocidentais (live action), séries da TV ocidental. O participante tem avaliada apenas a roupa, individualmente, parando diante dos juízes sobre o palco. Pode interpretar o personagem, mas não é necessária nenhuma apresentação.</p>
+                  </div>
+
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-white mb-2">2.5. Desfile Games</h4>
+                    <p className="text-sm">Somente para personagens originais de vídeo games. O participante tem avaliada apenas a roupa, individualmente, parando diante dos juízes sobre o palco. Pode interpretar o personagem, mas não é necessária nenhuma apresentação.</p>
+                  </div>
+
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-white mb-2">2.6. Apresentação Tradicional Individual</h4>
+                    <p className="text-sm">O participante interpreta seu personagem individualmente. A apresentação deve ser fiel à obra de origem.</p>
+                  </div>
+
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-white mb-2">2.7. Apresentação Tradicional em Grupo</h4>
+                    <p className="text-sm">Somente para grupos de 3 a 6 pessoas. As apresentações podem ser baseadas em animes, games ou universo geek, tradicional.</p>
+                  </div>
+
+                  <div className="bg-white/5 p-4 rounded-lg">
+                    <h4 className="font-bold text-white mb-2">2.8. Categoria Cospobre</h4>
+                    <p className="text-sm">Categoria especial para cosplays criativos feitos com materiais alternativos.</p>
+                  </div>
+
+                  <div className="mt-4">
+                    <p className="text-sm"><strong>2.9.</strong> A categoria deve ser informada no ato da inscrição.</p>
+                    <p className="text-sm mt-2"><strong>2.10.</strong> O participante poderá se inscrever em até 2 categorias, com exceção da categoria infantil.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 3. INSCRIÇÕES */}
+              <div>
+                <h3 className="font-black text-accent text-xl mb-3">3. INSCRIÇÕES</h3>
+                
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-bold text-white mb-2">3.1. Onde e quando:</h4>
+                    <p className="text-sm ml-4">No formulário abaixo em até 2 dias antes do evento. Após esta data, somente na área cosplay no dia do evento, até uma hora antes do início do concurso. Só serão aceitas inscrições com todos os campos preenchidos.</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">3.2. Número de categorias:</h4>
+                    <p className="text-sm ml-4">Pode-se participar de até 2 categorias no mesmo dia, preenchendo uma ficha para cada categoria.</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">3.3. Material de referência:</h4>
+                    <p className="text-sm ml-4">O material composto de imagens e informações referentes aos personagens é opcional e recomendado, valendo 0,5 pontos na média final do participante.</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">3.4. Áudio:</h4>
+                    <p className="text-sm ml-4">É permitido e opcional o uso de áudio pré-gravado, constituindo uma única faixa no formato .MP3, em pen-driver somente, a ser entregue no ato da inscrição com nome do participante/grupo e do personagem/série.</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">3.5. Fila de apresentação:</h4>
+                    <p className="text-sm ml-4">Os participantes devem dirigir-se ao lado do palco 15 minutos antes do concurso para formação da fila. Cosplayers que deixarem a fila estão sujeitos a desclassificação.</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">3.6. Vagas:</h4>
+                    <p className="text-sm ml-4">Serão permitidas, por dia, até 50 inscrições para Desfiles, 10 para Categoria Apresentações.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 4. APRESENTAÇÃO */}
+              <div>
+                <h3 className="font-black text-accent text-xl mb-3">4. APRESENTAÇÃO</h3>
+                
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-bold text-white mb-2">4.3. Tempo máximo de apresentação:</h4>
+                    <ul className="list-disc list-inside space-y-1 text-sm ml-4">
+                      <li>0:30 (trinta segundos) para Categoria Desfile</li>
+                      <li>3:00 (três minutos) para Categoria Apresentação</li>
+                      <li>Para Apresentações Individuais: +30 segundos para montagem e +30 para desmontagem de cenário</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">4.5. Efeitos especiais:</h4>
+                    <p className="text-sm ml-4">São permitidos efeitos secos (papel picado, confetes, purpurinas, talcos) e bolhas de sabão com sabão em recipiente fechado de até 60ml. Líquidos, viscosos, fogos, explosivos, tóxicos, armas brancas e de fogo estão proibidos.</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">4.7. Staffs pessoais:</h4>
+                    <p className="text-sm ml-4">São permitidos até 4 para Apresentação Individual, ou até 3 para Apresentação em Grupo, vestindo camiseta predominantemente preta, desde que informados na ficha de inscrição.</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">4.12. Conteúdo das apresentações:</h4>
+                    <p className="text-sm ml-4">Deve levar em conta a presença de crianças e pais no evento. Apresentações que firam disposições criminais estarão sujeitas às devidas punições legais.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 5. JULGAMENTO */}
+              <div>
+                <h3 className="font-black text-accent text-xl mb-3">5. JULGAMENTO</h3>
+                
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-bold text-white mb-2">5.1. Banca e notas:</h4>
+                    <p className="text-sm ml-4">Serão de no mínimo 2 e máximo 5 jurados. As notas terão intervalos de 0,25 ponto numa escala de 1 a 10. A decisão final da coordenação e jurados é irrefutável e inquestionável.</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-white mb-2">5.2. Quesitos e pesos:</h4>
+                    <ul className="list-disc list-inside space-y-1 text-sm ml-4">
+                      <li><strong>Performance</strong> (peso 4): Qualidade do roteiro e da interpretação, impacto da apresentação</li>
+                      <li><strong>Cosplay</strong> (peso 4): Acabamento da vestimenta, similaridade aos trajes originais</li>
+                      <li><strong>Fidelidade/Criatividade</strong> (peso 2): Fidelidade à obra ou criatividade da apresentação</li>
+                      <li>Para Desfile: quesito único "Cosplay" com peso 10</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* 6. PREMIAÇÃO */}
+              <div>
+                <h3 className="font-black text-accent text-xl mb-3">6. PREMIAÇÃO</h3>
+                
+                <div className="bg-accent/20 border-2 border-accent rounded-lg p-4 space-y-2">
+                  <p className="font-bold text-white">Todas as categorias:</p>
+                  <ul className="list-disc list-inside space-y-1 text-sm ml-4">
+                    <li><strong>1º Lugar:</strong> Medalha + R$ 125 em brindes</li>
+                    <li><strong>2º Lugar:</strong> Ingresso para o próximo evento da Alucard Animes</li>
+                    <li><strong>3º Lugar:</strong> Brinde</li>
+                  </ul>
+                  <p className="text-sm mt-3 ml-4"><strong>Observação:</strong> Mínimo de 5 participantes por categoria. Se não houver o número mínimo, as premiações poderão ser alteradas ou canceladas sem aviso prévio.</p>
+                </div>
+              </div>
+
+              {/* 7. DESCLASSIFICAÇÕES */}
+              <div>
+                <h3 className="font-black text-accent text-xl mb-3">7. DESCLASSIFICAÇÕES</h3>
+                
+                <div className="bg-red-500/20 border-2 border-red-500 rounded-lg p-4">
+                  <ul className="list-disc list-inside space-y-2 text-sm">
+                    <li>O Concurso Cosplay poderá ser cancelado se não houver o número mínimo de 5 participantes por categoria.</li>
+                    <li>Comentários maldosos, mal-intencionados ou caluniosos contra a organização dos eventos do Grupo CVG MANGÁ/ALUCARD ANIMES em redes sociais resultarão em desclassificação imediata.</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* 8. OBSERVAÇÕES FINAIS */}
+              <div>
+                <h3 className="font-black text-accent text-xl mb-3">8. OBSERVAÇÕES FINAIS</h3>
+                
+                <ul className="list-disc list-inside space-y-2 text-sm ml-4">
+                  <li>As regras são passíveis de mudanças sem aviso prévio, visando o melhor desenvolvimento do concurso.</li>
+                  <li>Todos os resultados e notas serão considerados oficiais depois de divulgados no dia do evento.</li>
+                  <li>É responsabilidade dos organizadores do concurso o cumprimento destas regras.</li>
+                  <li>Os casos omissos no regulamento serão analisados pela comissão organizadora e a decisão será soberana e inquestionável.</li>
                 </ul>
               </div>
 
-              <div>
-                <h4 className="font-bold text-accent mb-2">Não podem participar:</h4>
-                <ul className="list-disc list-inside space-y-1 text-sm">
-                  <li>Organizadores, juízes, coordenadores e staff do concurso</li>
-                  <li>Personagens de fanzines, fóruns, blogs ou cosplays originais</li>
-                  <li>Cosplays considerados "genéricos" (Stormtroopers, classes de MMORPG)</li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="font-bold text-accent mb-2">Tempo de apresentação:</h4>
-                <ul className="list-disc list-inside space-y-1 text-sm">
-                  <li>Categoria Desfile: máximo 30 segundos</li>
-                  <li>Categoria Apresentação: máximo 3 minutos</li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="font-bold text-accent mb-2">Premiação:</h4>
-                <ul className="list-disc list-inside space-y-1 text-sm">
-                  <li>1º Lugar: Medalha + R$ 100,00 em brindes</li>
-                  <li>2º Lugar: Medalha + Ingresso para o próximo evento</li>
-                  <li>3º Lugar: Medalha</li>
-                  <li>Cospobre: Brindes (Votação Popular)</li>
-                </ul>
-              </div>
             </CardContent>
           </Card>
 
