@@ -20,12 +20,12 @@ const VendorsSection = () => {
         </div>
 
         {/* Imagem dos Estandes */}
-        <div className="mb-12 max-w-5xl mx-auto">
+        <div className="mb-12 max-w-3xl mx-auto">
           <div className="relative overflow-hidden rounded-2xl shadow-2xl">
             <img
               src={vendorBooths}
               alt="Estandes de vendas com mangás e produtos geek"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover max-h-[400px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           </div>
