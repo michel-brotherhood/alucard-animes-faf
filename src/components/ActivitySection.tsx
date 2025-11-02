@@ -39,7 +39,7 @@ const ActivitySection = () => {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
-            ATIVIDADES NO EVENTO
+            MOMENTO OLD GAMES ALUCARD
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Aproveite diversas opções de entretenimento para toda a família!

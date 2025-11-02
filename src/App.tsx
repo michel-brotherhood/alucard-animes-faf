@@ -13,6 +13,7 @@ import ConcursoCosplay from "./pages/ConcursoCosplay";
 import ConcursoKpop from "./pages/ConcursoKpop";
 import ConcursoAnimeke from "./pages/ConcursoAnimeke";
 import ConcursoVideogames from "./pages/ConcursoVideogames";
+import Standistas from "./pages/Standistas";
 import OEvento from "./pages/OEvento";
 import Ingressos from "./pages/Ingressos";
 import Ajuda from "./pages/Ajuda";
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/concursos/kpop" element={<ConcursoKpop />} />
           <Route path="/concursos/animeke" element={<ConcursoAnimeke />} />
           <Route path="/concursos/videogames" element={<ConcursoVideogames />} />
+          <Route path="/standistas" element={<Standistas />} />
           <Route path="/ingressos" element={<Ingressos />} />
           <Route path="/ajuda" element={<Ajuda />} />
           <Route path="/contato" element={<Contato />} />
