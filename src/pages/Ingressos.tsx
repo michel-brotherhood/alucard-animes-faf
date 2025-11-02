@@ -135,13 +135,16 @@ const Ingressos = () => {
           ))}
         </div>
 
-        <div className="mb-12 text-center">
+        <div className="mb-12 text-center space-y-4">
           <a 
             href="/ajuda#regras-gerais" 
             className="inline-flex items-center gap-2 text-lg font-bold text-primary hover:text-secondary transition-colors"
           >
             Ver regras gerais dos ingressos
           </a>
+          <p className="text-sm text-foreground/60">
+            * Valores sujeitos a taxa de conveniência da plataforma Uticket
+          </p>
         </div>
 
         <Card className="bg-muted/50 border-primary/20 mx-4">
