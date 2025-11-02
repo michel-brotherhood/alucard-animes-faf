@@ -14,7 +14,7 @@ const guests = [
     items: [
       { 
         name: "Raphael Freitas", 
-        role: "Me and the Machine - Show épico com músicas de games retrô ao som de uma guitarra eletrizante!",
+        role: "O Guitarrista Raphael Freitas e seu projeto Me and the Machine farão um show épico com músicas de games retrô que marcaram gerações — tudo ao som de uma guitarra eletrizante! Se você é fã de nostalgia, games e boa música, esse momento é imperdível!",
         image: raphaelImage,
         instagram: "https://www.instagram.com/meand_themachine/"
       },
