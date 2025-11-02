@@ -459,7 +459,7 @@ const ConcursoCosplay = () => {
                                 <SelectValue placeholder="Selecione a categoria" />
                               </SelectTrigger>
                             </FormControl>
-                            <SelectContent>
+                            <SelectContent className="bg-white">
                               {categorias.map((cat) => (
                                 <SelectItem key={cat.value} value={cat.value}>
                                   {cat.label}
@@ -546,6 +546,16 @@ const ConcursoCosplay = () => {
                   >
                     ENVIAR INSCRIÇÃO
                   </Button>
+
+                  <div className="text-center">
+                    <p className="text-white/70 mb-3">Ou envie um e-mail:</p>
+                    <a 
+                      href="mailto:friburgogeek@alucardanimes.com?subject=Inscrição%20Concurso%20Cosplay"
+                      className="inline-block bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-lg transition-colors border border-white/30"
+                    >
+                      📧 friburgogeek@alucardanimes.com
+                    </a>
+                  </div>
                 </form>
               </Form>
             </CardContent>

@@ -1,4 +1,4 @@
-import { Facebook, Instagram, MessageCircle } from "lucide-react";
+import { Facebook, Instagram, MessageCircle, MapPin, Calendar, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import friburgoGeekLogo from "@/assets/friburgo-geek-logo.png";
 
@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-secondary py-12 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <img src={friburgoGeekLogo} alt="Friburgo Geek" className="h-20 mb-4" />
             <p className="text-white/80">
@@ -21,6 +21,24 @@ const Footer = () => {
               <li><Link to="/line-up" className="text-white/80 hover:text-accent transition-colors">Line-up</Link></li>
               <li><a href="/#ingressos" className="text-white/80 hover:text-accent transition-colors">Ingressos</a></li>
               <li><Link to="/ajuda" className="text-white/80 hover:text-accent transition-colors">Ajuda</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-bold mb-4">Informações do Evento</h4>
+            <ul className="space-y-2">
+              <li className="flex items-center gap-2 text-white/80">
+                <Calendar className="w-4 h-4 text-accent" />
+                <span>16 e 17 de Agosto de 2026</span>
+              </li>
+              <li className="flex items-center gap-2 text-white/80">
+                <Clock className="w-4 h-4 text-accent" />
+                <span>10h às 22h</span>
+              </li>
+              <li className="flex items-center gap-2 text-white/80">
+                <MapPin className="w-4 h-4 text-accent" />
+                <span>SESC Nova Friburgo</span>
+              </li>
             </ul>
           </div>
 

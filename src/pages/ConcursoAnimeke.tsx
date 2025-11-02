@@ -324,6 +324,16 @@ const ConcursoAnimeke = () => {
                   >
                     ENVIAR INSCRIÇÃO
                   </Button>
+
+                  <div className="text-center">
+                    <p className="text-white/70 mb-3">Ou envie um e-mail:</p>
+                    <a 
+                      href="mailto:friburgogeek@alucardanimes.com?subject=Inscrição%20Campeonato%20Animekê"
+                      className="inline-block bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-lg transition-colors border border-white/30"
+                    >
+                      📧 friburgogeek@alucardanimes.com
+                    </a>
+                  </div>
                 </form>
               </Form>
             </CardContent>
