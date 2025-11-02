@@ -2,8 +2,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingMenu from "@/components/FloatingMenu";
 import { Card, CardContent } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Star, Instagram } from "lucide-react";
 import raphaelImage from "@/assets/raphael-freitas.webp";
+import eventLogo from "@/assets/friburgo-geek-icon.png";
 
 const guests = [
   {
@@ -16,9 +18,9 @@ const guests = [
         image: raphaelImage,
         instagram: "https://www.instagram.com/meand_themachine/"
       },
-      { name: "", role: "Em breve..." },
-      { name: "", role: "Em breve..." },
-      { name: "", role: "Em breve..." },
+      { name: "", role: "Em breve...", logo: true },
+      { name: "", role: "Em breve...", logo: true },
+      { name: "", role: "Em breve...", logo: true },
     ],
   },
 ];
@@ -52,27 +54,39 @@ const LineUp = () => {
                     <Card key={index} className="bg-white/10 backdrop-blur-sm border-accent/30 hover:border-accent transition-all">
                       <CardContent className="p-6 text-center">
                         {item.image ? (
-                          <img 
-                            src={item.image} 
-                            alt={item.name}
-                            className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
-                          />
-                        ) : (
-                          <div className="w-24 h-24 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-4 flex items-center justify-center">
-                            <span className="text-4xl">🎸</span>
+                          <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full border-4 border-primary shadow-lg shadow-primary/50">
+                            <img 
+                              src={item.image} 
+                              alt={item.name}
+                              className="w-full h-full object-cover"
+                            />
                           </div>
-                        )}
+                        ) : item.logo ? (
+                          <div className="w-32 h-32 mx-auto mb-4 flex items-center justify-center">
+                            <img 
+                              src={eventLogo} 
+                              alt="Friburgo Geek"
+                              className="w-full h-full object-contain opacity-50"
+                            />
+                          </div>
+                        ) : null}
                         {item.name && <h3 className="text-xl font-bold text-white mb-2">{item.name}</h3>}
-                        <p className="text-white/70 text-sm">{item.role}</p>
+                        <p className="text-white/70 text-sm mb-3">{item.role}</p>
                         {item.instagram && (
-                          <a 
-                            href={item.instagram} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="inline-block mt-3 text-accent hover:text-accent/80 transition-colors text-sm font-semibold"
+                          <Button
+                            asChild
+                            className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold shadow-lg shadow-primary/30"
                           >
-                            @meand_themachine
-                          </a>
+                            <a 
+                              href={item.instagram} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-2"
+                            >
+                              <Instagram className="w-4 h-4" />
+                              Seguir no Instagram
+                            </a>
+                          </Button>
                         )}
                       </CardContent>
                     </Card>
