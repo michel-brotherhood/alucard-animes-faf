@@ -5,6 +5,8 @@ import Countdown from "@/components/Countdown";
 import TicketCards from "@/components/TicketCards";
 import Features from "@/components/Features";
 import MapSection from "@/components/MapSection";
+import CosplayGallery from "@/components/CosplayGallery";
+import ConcursosCallToAction from "@/components/ConcursosCallToAction";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import FloatingMenu from "@/components/FloatingMenu";
@@ -19,6 +21,8 @@ const Index = () => {
       <TicketCards />
       <Features />
       <MapSection />
+      <CosplayGallery />
+      <ConcursosCallToAction />
       <FAQ />
       <Footer />
       <FloatingMenu />
