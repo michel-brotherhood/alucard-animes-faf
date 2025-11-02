@@ -125,13 +125,6 @@ const Header = () => {
         </div>
 
         <div className="flex items-center gap-2 md:gap-3">
-          <Button 
-            variant="glass" 
-            size="sm"
-            className="hidden md:flex rounded-full text-xs font-semibold"
-          >
-            Login
-          </Button>
           <Link to="/ingressos">
             <Button 
               className="bg-accent text-primary hover:bg-accent/90 font-bold text-xs md:text-sm px-4 md:px-8 py-2 md:py-2.5 rounded-full shadow-lg"

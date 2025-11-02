@@ -12,7 +12,7 @@ const FloatingMenu = () => {
       icon: MessageSquare,
       label: "WhatsApp",
       color: "bg-gradient-to-br from-green-400 to-green-600",
-      href: "https://api.whatsapp.com/send/?phone=5521977498015&text=Contato+ANIME+NIKITY&type=phone_number&app_absent=0",
+      href: "https://api.whatsapp.com/send/?phone=5521977498015&text=Olá!+Gostaria+de+informações+sobre+o+Friburgo+Geek&type=phone_number",
       external: true,
     },
     {

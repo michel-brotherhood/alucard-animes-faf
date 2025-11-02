@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import friburgoGeekLogo from "@/assets/friburgo-geek-logo.png";
 
@@ -20,24 +20,21 @@ const Footer = () => {
               <li><Link to="/o-evento" className="text-white/80 hover:text-accent transition-colors">O Evento</Link></li>
               <li><Link to="/line-up" className="text-white/80 hover:text-accent transition-colors">Line-up</Link></li>
               <li><a href="/#ingressos" className="text-white/80 hover:text-accent transition-colors">Ingressos</a></li>
-              <li><a href="/#faq" className="text-white/80 hover:text-accent transition-colors">FAQ</a></li>
+              <li><Link to="/ajuda" className="text-white/80 hover:text-accent transition-colors">Ajuda</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-bold mb-4">Redes Sociais</h4>
             <div className="flex gap-4">
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-accent hover:text-secondary transition-all">
+              <a href="https://www.instagram.com/friburgogeek/" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-3 rounded-full hover:bg-accent hover:text-secondary transition-all">
                 <Instagram className="w-5 h-5 text-white" />
               </a>
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-accent hover:text-secondary transition-all">
+              <a href="https://www.facebook.com/friburgogeek" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-3 rounded-full hover:bg-accent hover:text-secondary transition-all">
                 <Facebook className="w-5 h-5 text-white" />
               </a>
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-accent hover:text-secondary transition-all">
-                <Twitter className="w-5 h-5 text-white" />
-              </a>
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-accent hover:text-secondary transition-all">
-                <Youtube className="w-5 h-5 text-white" />
+              <a href="https://api.whatsapp.com/send/?phone=5521977498015&text=Olá!+Gostaria+de+informações+sobre+o+Friburgo+Geek&type=phone_number" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-3 rounded-full hover:bg-accent hover:text-secondary transition-all">
+                <MessageCircle className="w-5 h-5 text-white" />
               </a>
             </div>
           </div>
