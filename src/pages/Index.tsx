@@ -11,10 +11,12 @@ import ConcursosCallToAction from "@/components/ConcursosCallToAction";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import FloatingMenu from "@/components/FloatingMenu";
+import SnowEffect from "@/components/SnowEffect";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SnowEffect />
       <Header />
       <Hero />
       <EventInfo />

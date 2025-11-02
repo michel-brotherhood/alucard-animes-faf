@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingMenu from "@/components/FloatingMenu";
 import FAQ from "@/components/FAQ";
+import SnowEffect from "@/components/SnowEffect";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, ShoppingCart } from "lucide-react";
@@ -59,6 +60,7 @@ const tickets = [
 
   return (
     <div className="min-h-screen bg-background">
+      <SnowEffect />
       <Header />
       
       <main className="container mx-auto px-4 py-12">

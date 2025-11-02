@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import FloatingMenu from "@/components/FloatingMenu";
 import FAQ from "@/components/FAQ";
 import MapSection from "@/components/MapSection";
+import SnowEffect from "@/components/SnowEffect";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Calendar, MapPin, Star, Instagram, Facebook } from "lucide-react";
 import alucardLogo from "@/assets/alucard-animes-logo.png";
@@ -17,6 +18,7 @@ const stats = [
 const OEvento = () => {
   return (
     <div className="min-h-screen">
+      <SnowEffect />
       <Header />
       
       <section className="bg-gradient-to-b from-secondary to-primary py-16 px-6">
