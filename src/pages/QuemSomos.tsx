@@ -15,6 +15,16 @@ import timeline20042008 from "@/assets/timeline-2004-2008.png";
 import timeline2009 from "@/assets/timeline-2009.png";
 import timeline2010Cnpj from "@/assets/timeline-2010-cnpj.png";
 import timeline2010Nikity from "@/assets/timeline-2010-nikity.png";
+import timeline2011Gakkou from "@/assets/timeline-2011-gakkou.png";
+import timeline2012Loja from "@/assets/timeline-2012-loja.png";
+import timeline2012Hentai from "@/assets/timeline-2012-hentai.png";
+import timeline2013Events from "@/assets/timeline-2013-events.png";
+import timeline2016Goncageek from "@/assets/timeline-2016-goncageek.png";
+import timeline2016Bh from "@/assets/timeline-2016-bh.png";
+import timeline2017Nitgeek from "@/assets/timeline-2017-nitgeek.png";
+import timeline2018Faf from "@/assets/timeline-2018-faf.png";
+import timeline2019Geekinrio from "@/assets/timeline-2019-geekinrio.png";
+import timeline2022Animegonca from "@/assets/timeline-2022-animegonca.png";
 
 const QuemSomos = () => {
   const timelineEvents = [
@@ -77,6 +87,66 @@ const QuemSomos = () => {
       title: "Alucard Animes de volta aos eventos",
       description: "A empresa volta a organizar eventos junto com o grupo CVG MANGÁ, nasce em Niterói no dia 15 de agosto o evento Anime Nikity, o maior evento do segmento na cidade.",
       image: timeline2010Nikity
+    },
+    {
+      year: "2011",
+      title: "Evento Anime no Gakkou agora é da Alucard Animes",
+      description: "O evento mais antigo da cidade o Anime no Gakkou, que nasceu no ano de 2006, criação de Alex Latini, membro do Grupo CVGMANGÁ, passa a integrar a empresa Alucard Animes, evento realizado no Salão Nobre do Canto do Rio.",
+      image: timeline2011Gakkou
+    },
+    {
+      year: "2012",
+      title: "Nova Loja do Alucard Animes",
+      description: "A empresa abre outra loja no Centro de Niterói, na rua São João.",
+      image: timeline2012Loja
+    },
+    {
+      year: "2012",
+      title: "Evento Hentai Con",
+      description: "Primeiro evento erótico da empresa, com temática nos animes eróticos japoneses, \"Hentai\", realizado no Clube Marajoara no bairro do Fonseca em Niterói, foi um mega sucesso, atraindo vários frequentadores.",
+      image: timeline2012Hentai
+    },
+    {
+      year: "2013",
+      title: "Eventos Marikanime e Itanime",
+      description: "A empresa expande seus negócios e basta oferecer eventos de animes em outras cidades além do eixo Niterói-São Gonçalo, tem inicio ao evento Marikanime, realizado em Maricá no mês de abril no Colégio Joana e o evento Itanime, realizado em Itaboraí no colégio Cenecista Alberto Torres no mês de junho.",
+      image: timeline2013Events
+    },
+    {
+      year: "2016",
+      title: "Evento Gonça Geek",
+      description: "Depois das edições do Projeto Otaku, 2014 e 2015 a empresa resolve levar para São Gonçalo um evento com temática Geek, nasce o evento Gonça Geek, realizado no Clube Mauá.",
+      image: timeline2016Goncageek
+    },
+    {
+      year: "2016",
+      title: "Evento Geek Festival BH",
+      description: "Primeiro evento da empresa fora do estado do Rio de Janeiro, evento Geek Festival BH, realizado na cidade de Belo Horizonte em Minas Gerais.",
+      image: timeline2016Bh
+    },
+    {
+      year: "2017",
+      title: "Evento NitGeek Festival",
+      description: "Nasce o evento NitGeek Festival, primeiro evento com temática geek da cidade de Niterói.",
+      image: timeline2017Nitgeek
+    },
+    {
+      year: "2018",
+      title: "Evento Friburgo Anime Festival (FAF)",
+      description: "Novo evento da Alucard Animes na cidade serrana de Nova Friburgo no estado do RJ, o evento foi um grande sucesso já na sua primeira edição.",
+      image: timeline2018Faf
+    },
+    {
+      year: "2019",
+      title: "Evento Geek in Rio",
+      description: "Primeiro evento da Alucard Animes em terras cariocas, realizado no Clube Israelita em Copacabana.",
+      image: timeline2019Geekinrio
+    },
+    {
+      year: "2022",
+      title: "Evento Anime no Gonça",
+      description: "Atualização do evento Projeto Otaku, agora com o nome Anime no Gonça, o evento mais antigo de animes da cidade de São Gonçalo.",
+      image: timeline2022Animegonca
     }
   ];
 
@@ -91,7 +161,7 @@ const QuemSomos = () => {
           <h1 className="text-4xl md:text-6xl font-black text-accent mb-8">
             QUEM SOMOS
           </h1>
-          <div className="flex justify-center mb-12">
+          <div className="flex justify-center mb-4">
             <img 
               src={alucardLogo} 
               alt="Alucard Animes - Desde 2003" 
@@ -132,44 +202,6 @@ const QuemSomos = () => {
             </div>
           </div>
 
-          {/* CTA and Social Media */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-16">
-            <Button 
-              size="lg"
-              className="bg-accent text-primary hover:bg-accent/90 font-bold text-base px-10 py-6 rounded-full"
-              asChild
-            >
-              <a 
-                href="https://www.instagram.com/alucardanimes/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                CONHECER MAIS
-              </a>
-            </Button>
-
-            {/* Social Media Links */}
-            <div className="flex gap-4">
-              <a
-                href="https://www.instagram.com/alucardanimes/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur-sm border-2 border-accent/30 rounded-full p-4 hover:bg-accent/20 hover:scale-110 transition-all"
-                aria-label="Instagram Alucard Animes"
-              >
-                <Instagram className="w-6 h-6 text-accent" />
-              </a>
-              <a
-                href="https://www.facebook.com/AlucardAnimes"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur-sm border-2 border-accent/30 rounded-full p-4 hover:bg-accent/20 hover:scale-110 transition-all"
-                aria-label="Facebook Alucard Animes"
-              >
-                <Facebook className="w-6 h-6 text-accent" />
-              </a>
-            </div>
-          </div>
         </div>
       </section>
 
