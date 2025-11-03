@@ -258,21 +258,18 @@ const QuemSomos = () => {
                   {/* Content */}
                   <div className="md:w-1/2 bg-white/10 backdrop-blur-sm border-2 border-accent/30 rounded-2xl p-6">
                     <div className="text-accent font-black text-2xl mb-2">{event.year}</div>
-                    <h3 className="text-white font-bold text-xl mb-3">
-                      {event.link ? (
-                        <a 
-                          href={event.link} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="hover:text-accent transition-colors underline"
-                        >
-                          {event.title}
-                        </a>
-                      ) : (
-                        event.title
-                      )}
-                    </h3>
-                    <p className="text-white/80 text-sm leading-relaxed">{event.description}</p>
+                    <h3 className="text-white font-bold text-xl mb-3">{event.title}</h3>
+                    <p className="text-white/80 text-sm leading-relaxed mb-4">{event.description}</p>
+                    {event.link && (
+                      <a
+                        href={event.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-accent text-primary hover:bg-accent/90 font-bold text-sm px-6 py-2 rounded-full transition-colors"
+                      >
+                        SABER MAIS
+                      </a>
+                    )}
                   </div>
                   
                   {/* Timeline Dot */}
