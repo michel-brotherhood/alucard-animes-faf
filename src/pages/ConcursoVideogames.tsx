@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import FloatingMenu from "@/components/FloatingMenu";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Trophy, Clock, Users, Gamepad2 } from "lucide-react";
+import { Clock, Users, Gamepad2 } from "lucide-react";
 import mortalKombat from "@/assets/mortal-kombat-1.png";
 import streetFighter from "@/assets/street-fighter-6.png";
 import tekken8 from "@/assets/tekken-8.png";
@@ -55,15 +55,7 @@ const ConcursoVideogames = () => {
           </div>
 
           {/* Informações Principais */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-            <Card className="text-center hover:scale-105 transition-all duration-300">
-              <CardContent className="pt-6">
-                <Trophy className="w-12 h-12 text-primary mx-auto mb-3" />
-                <h3 className="font-bold text-lg mb-2">Premiação</h3>
-                <p className="text-muted-foreground text-sm">Troféus e prêmios</p>
-              </CardContent>
-            </Card>
-            
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <Card className="text-center hover:scale-105 transition-all duration-300">
               <CardContent className="pt-6">
                 <Clock className="w-12 h-12 text-primary mx-auto mb-3" />
