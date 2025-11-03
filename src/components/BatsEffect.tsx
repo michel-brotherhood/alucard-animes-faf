@@ -3,66 +3,78 @@ const BatsEffect = () => {
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
       {/* Bat 1 */}
       <div className="absolute top-1/4 left-1/4 animate-[float_4s_ease-in-out_infinite]">
-        <svg width="40" height="30" viewBox="0 0 40 30" fill="none" className="opacity-70">
-          <path 
-            d="M20 15C18 10 10 8 5 12C3 14 2 16 3 18C4 19 6 19 7 18C8 17 9 15 11 14C13 13 15 14 16 16L20 20L24 16C25 14 27 13 29 14C31 15 32 17 33 18C34 19 36 19 37 18C38 16 37 14 35 12C30 8 22 10 20 15Z" 
-            fill="currentColor" 
-            className="text-accent/60"
-          />
-          <circle cx="14" cy="15" r="1.5" fill="currentColor" className="text-red-500/80" />
-          <circle cx="26" cy="15" r="1.5" fill="currentColor" className="text-red-500/80" />
+        <svg width="50" height="25" viewBox="0 0 50 25" fill="none">
+          {/* Left Wing */}
+          <path d="M5 12 Q2 8 0 10 Q2 15 8 13 L15 15" fill="#000000" opacity="0.8"/>
+          {/* Right Wing */}
+          <path d="M45 12 Q48 8 50 10 Q48 15 42 13 L35 15" fill="#000000" opacity="0.8"/>
+          {/* Body */}
+          <ellipse cx="25" cy="15" rx="3" ry="5" fill="#000000"/>
+          {/* Head */}
+          <circle cx="25" cy="12" r="3" fill="#000000"/>
+          {/* Left Ear */}
+          <path d="M23 10 L22 7 L24 10" fill="#000000"/>
+          {/* Right Ear */}
+          <path d="M27 10 L28 7 L26 10" fill="#000000"/>
+          {/* Eyes */}
+          <circle cx="23.5" cy="12" r="0.5" fill="#ff0000"/>
+          <circle cx="26.5" cy="12" r="0.5" fill="#ff0000"/>
         </svg>
       </div>
 
       {/* Bat 2 */}
       <div className="absolute top-1/3 right-1/4 animate-[float_5s_ease-in-out_infinite_0.5s]">
-        <svg width="35" height="25" viewBox="0 0 40 30" fill="none" className="opacity-60">
-          <path 
-            d="M20 15C18 10 10 8 5 12C3 14 2 16 3 18C4 19 6 19 7 18C8 17 9 15 11 14C13 13 15 14 16 16L20 20L24 16C25 14 27 13 29 14C31 15 32 17 33 18C34 19 36 19 37 18C38 16 37 14 35 12C30 8 22 10 20 15Z" 
-            fill="currentColor" 
-            className="text-accent/60"
-          />
-          <circle cx="14" cy="15" r="1.5" fill="currentColor" className="text-red-500/80" />
-          <circle cx="26" cy="15" r="1.5" fill="currentColor" className="text-red-500/80" />
+        <svg width="45" height="22" viewBox="0 0 50 25" fill="none">
+          <path d="M5 12 Q2 8 0 10 Q2 15 8 13 L15 15" fill="#000000" opacity="0.7"/>
+          <path d="M45 12 Q48 8 50 10 Q48 15 42 13 L35 15" fill="#000000" opacity="0.7"/>
+          <ellipse cx="25" cy="15" rx="3" ry="5" fill="#000000"/>
+          <circle cx="25" cy="12" r="3" fill="#000000"/>
+          <path d="M23 10 L22 7 L24 10" fill="#000000"/>
+          <path d="M27 10 L28 7 L26 10" fill="#000000"/>
+          <circle cx="23.5" cy="12" r="0.5" fill="#ff0000"/>
+          <circle cx="26.5" cy="12" r="0.5" fill="#ff0000"/>
         </svg>
       </div>
 
       {/* Bat 3 */}
       <div className="absolute top-1/2 left-1/3 animate-[float_6s_ease-in-out_infinite_1s]">
-        <svg width="30" height="22" viewBox="0 0 40 30" fill="none" className="opacity-50">
-          <path 
-            d="M20 15C18 10 10 8 5 12C3 14 2 16 3 18C4 19 6 19 7 18C8 17 9 15 11 14C13 13 15 14 16 16L20 20L24 16C25 14 27 13 29 14C31 15 32 17 33 18C34 19 36 19 37 18C38 16 37 14 35 12C30 8 22 10 20 15Z" 
-            fill="currentColor" 
-            className="text-accent/60"
-          />
-          <circle cx="14" cy="15" r="1.5" fill="currentColor" className="text-red-500/80" />
-          <circle cx="26" cy="15" r="1.5" fill="currentColor" className="text-red-500/80" />
+        <svg width="40" height="20" viewBox="0 0 50 25" fill="none">
+          <path d="M5 12 Q2 8 0 10 Q2 15 8 13 L15 15" fill="#000000" opacity="0.6"/>
+          <path d="M45 12 Q48 8 50 10 Q48 15 42 13 L35 15" fill="#000000" opacity="0.6"/>
+          <ellipse cx="25" cy="15" rx="3" ry="5" fill="#000000"/>
+          <circle cx="25" cy="12" r="3" fill="#000000"/>
+          <path d="M23 10 L22 7 L24 10" fill="#000000"/>
+          <path d="M27 10 L28 7 L26 10" fill="#000000"/>
+          <circle cx="23.5" cy="12" r="0.5" fill="#ff0000"/>
+          <circle cx="26.5" cy="12" r="0.5" fill="#ff0000"/>
         </svg>
       </div>
 
       {/* Bat 4 */}
       <div className="absolute top-2/3 right-1/3 animate-[float_5.5s_ease-in-out_infinite_1.5s]">
-        <svg width="38" height="28" viewBox="0 0 40 30" fill="none" className="opacity-65">
-          <path 
-            d="M20 15C18 10 10 8 5 12C3 14 2 16 3 18C4 19 6 19 7 18C8 17 9 15 11 14C13 13 15 14 16 16L20 20L24 16C25 14 27 13 29 14C31 15 32 17 33 18C34 19 36 19 37 18C38 16 37 14 35 12C30 8 22 10 20 15Z" 
-            fill="currentColor" 
-            className="text-accent/60"
-          />
-          <circle cx="14" cy="15" r="1.5" fill="currentColor" className="text-red-500/80" />
-          <circle cx="26" cy="15" r="1.5" fill="currentColor" className="text-red-500/80" />
+        <svg width="48" height="24" viewBox="0 0 50 25" fill="none">
+          <path d="M5 12 Q2 8 0 10 Q2 15 8 13 L15 15" fill="#000000" opacity="0.75"/>
+          <path d="M45 12 Q48 8 50 10 Q48 15 42 13 L35 15" fill="#000000" opacity="0.75"/>
+          <ellipse cx="25" cy="15" rx="3" ry="5" fill="#000000"/>
+          <circle cx="25" cy="12" r="3" fill="#000000"/>
+          <path d="M23 10 L22 7 L24 10" fill="#000000"/>
+          <path d="M27 10 L28 7 L26 10" fill="#000000"/>
+          <circle cx="23.5" cy="12" r="0.5" fill="#ff0000"/>
+          <circle cx="26.5" cy="12" r="0.5" fill="#ff0000"/>
         </svg>
       </div>
 
       {/* Bat 5 */}
       <div className="absolute top-1/4 right-1/4 animate-[float_4.5s_ease-in-out_infinite_2s]">
-        <svg width="32" height="24" viewBox="0 0 40 30" fill="none" className="opacity-55">
-          <path 
-            d="M20 15C18 10 10 8 5 12C3 14 2 16 3 18C4 19 6 19 7 18C8 17 9 15 11 14C13 13 15 14 16 16L20 20L24 16C25 14 27 13 29 14C31 15 32 17 33 18C34 19 36 19 37 18C38 16 37 14 35 12C30 8 22 10 20 15Z" 
-            fill="currentColor" 
-            className="text-accent/60"
-          />
-          <circle cx="14" cy="15" r="1.5" fill="currentColor" className="text-red-500/80" />
-          <circle cx="26" cy="15" r="1.5" fill="currentColor" className="text-red-500/80" />
+        <svg width="42" height="21" viewBox="0 0 50 25" fill="none">
+          <path d="M5 12 Q2 8 0 10 Q2 15 8 13 L15 15" fill="#000000" opacity="0.65"/>
+          <path d="M45 12 Q48 8 50 10 Q48 15 42 13 L35 15" fill="#000000" opacity="0.65"/>
+          <ellipse cx="25" cy="15" rx="3" ry="5" fill="#000000"/>
+          <circle cx="25" cy="12" r="3" fill="#000000"/>
+          <path d="M23 10 L22 7 L24 10" fill="#000000"/>
+          <path d="M27 10 L28 7 L26 10" fill="#000000"/>
+          <circle cx="23.5" cy="12" r="0.5" fill="#ff0000"/>
+          <circle cx="26.5" cy="12" r="0.5" fill="#ff0000"/>
         </svg>
       </div>
 
