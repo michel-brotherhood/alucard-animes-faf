@@ -7,6 +7,7 @@ import friburgoGeekLogo from "@/assets/friburgo-geek-logo.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isConcursosOpen, setIsConcursosOpen] = useState(false);
+  const [isContatoOpen, setIsContatoOpen] = useState(false);
 
   // Bloquear scroll do body quando menu abrir
   useEffect(() => {
@@ -45,6 +46,12 @@ const Header = () => {
               className="px-4 py-2 text-white text-sm font-semibold hover:bg-white/10 transition-colors rounded-full"
             >
               O evento
+            </Link>
+            <Link 
+              to="/quem-somos" 
+              className="px-4 py-2 text-white text-sm font-semibold hover:bg-white/10 transition-colors rounded-full"
+            >
+              Quem somos
             </Link>
             <Link 
               to="/line-up" 
@@ -111,24 +118,38 @@ const Header = () => {
               )}
             </div>
             
-            <Link 
-              to="/quem-somos" 
-              className="px-4 py-2 text-white text-sm font-semibold hover:bg-white/10 transition-colors rounded-full"
+            {/* Dropdown Contato */}
+            <div 
+              className="relative group"
+              onMouseEnter={() => setIsContatoOpen(true)}
+              onMouseLeave={() => setIsContatoOpen(false)}
             >
-              Quem somos
-            </Link>
-            <Link 
-              to="/ajuda" 
-              className="px-4 py-2 text-white text-sm font-semibold hover:bg-white/10 transition-colors rounded-full"
-            >
-              Ajuda
-            </Link>
-            <Link 
-              to="/contato" 
-              className="px-4 py-2 text-white text-sm font-semibold hover:bg-white/10 transition-colors rounded-full"
-            >
-              Contato
-            </Link>
+              <button 
+                className="px-4 py-2 text-white text-sm font-semibold hover:bg-white/10 transition-colors rounded-full flex items-center gap-1"
+              >
+                Contato
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              
+              {isContatoOpen && (
+                <div className="absolute top-full left-0 pt-2 z-50">
+                  <div className="bg-primary rounded-2xl shadow-2xl py-2 min-w-[180px] border-2 border-accent/30">
+                    <Link 
+                      to="/contato" 
+                      className="block px-4 py-2 text-white text-sm font-semibold hover:bg-white/10 transition-colors"
+                    >
+                      Fale Conosco
+                    </Link>
+                    <Link 
+                      to="/ajuda" 
+                      className="block px-4 py-2 text-white text-sm hover:bg-white/10 transition-colors"
+                    >
+                      Ajuda
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
@@ -268,20 +289,28 @@ const Header = () => {
                 >
                   Quem somos
                 </Link>
-                <Link 
-                  to="/ajuda" 
-                  onClick={() => setIsMenuOpen(false)}
-                  className="text-white font-semibold py-2.5 px-3 rounded-full hover:bg-white/10 transition-colors"
-                >
-                  Ajuda
-                </Link>
-                <Link 
-                  to="/contato" 
-                  onClick={() => setIsMenuOpen(false)}
-                  className="text-white font-semibold py-2.5 px-3 rounded-full hover:bg-white/10 transition-colors"
-                >
-                  Contato
-                </Link>
+                
+                {/* Contato Section */}
+                <div className="mt-2 mb-1">
+                  <p className="text-accent text-xs font-bold uppercase tracking-wider px-3 mb-1">
+                    Contato
+                  </p>
+                  <Link 
+                    to="/contato" 
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-white font-semibold py-2.5 px-3 rounded-full hover:bg-white/10 transition-colors block"
+                  >
+                    Fale Conosco
+                  </Link>
+                  <Link 
+                    to="/ajuda" 
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-white/90 text-sm py-2 px-3 rounded-full hover:bg-white/10 transition-colors flex items-center gap-2"
+                  >
+                    <span className="text-base">❓</span>
+                    <span>Ajuda</span>
+                  </Link>
+                </div>
 
                 {/* CTA Button */}
                 <Link 
