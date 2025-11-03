@@ -10,14 +10,12 @@ const schedule = [
   { time: "13:00", event: "Arena Gamer & Retrô Games", location: "Arena Games" },
   { time: "13:30", event: "Campeonatos de Videogames", location: "Arena Games" },
   { time: "14:00", event: "Show com o Guitarrista Raphael Freitas", location: "STAGE Principal" },
-  { time: "14:30", event: "Campeonato K-POP Generations", location: "STAGE Principal" },
   { time: "15:00", event: "Cine Anime", location: "Sala de Cinema" },
   { time: "15:30", event: "Concurso de Cosplay", location: "STAGE Principal" },
-  { time: "16:00", event: "Beat Saber VR", location: "Arena VR" },
-  { time: "16:30", event: "Animeke Livre", location: "STAGE Principal" },
-  { time: "17:00", event: "Board Games & Wood Games", location: "Área Interativa" },
-  { time: "17:30", event: "Finais dos Campeonatos", location: "STAGE Principal" },
-  { time: "17:45", event: "Premiações e Sorteios", location: "STAGE Principal" },
+  { time: "16:00", event: "Campeonato K-POP Generations", location: "STAGE Principal" },
+  { time: "16:30", event: "Beat Saber VR", location: "Arena VR" },
+  { time: "17:00", event: "Animeke Livre", location: "STAGE Principal" },
+  { time: "17:30", event: "Finais dos Campeonatos e Premiações", location: "STAGE Principal" },
   { time: "18:00", event: "Encerramento", location: "STAGE Principal" },
 ];
 
