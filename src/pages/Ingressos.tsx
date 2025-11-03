@@ -53,11 +53,9 @@ const Ingressos = () => {
       badge: "promocional",
       badgeColor: "bg-destructive text-white",
       features: [
-        "Entrada antecipada (a partir das 11:00h, sem filas)",
-        "Acesso ao camarim dos artistas/dubladores/youtubers",
+        "Entrada antecipada ao evento",
         "Crachá exclusivo VIP",
-        "R$ 30,00 em produtos nos estandes Marikanime Shop",
-        "R$ 30,00 em produtos no Konoha Lanches",
+        "R$ 130,00 em compras no estande Yume Geek Store ou na Lanchonete Konoha Lanches",
       ],
       note: "Experiência completa e diferenciada!",
       isVip: true,
