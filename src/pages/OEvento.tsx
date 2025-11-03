@@ -96,16 +96,6 @@ const OEvento = () => {
             </Carousel>
           </div>
 
-          {/* CTA Button */}
-          <div className="flex justify-center mb-8">
-            <a 
-              href="/o-evento" 
-              className="inline-block bg-accent hover:bg-accent/90 text-primary font-black text-lg px-12 py-4 rounded-full shadow-lg transition-all hover:scale-105"
-            >
-              Ver Mais Sobre o Evento
-            </a>
-          </div>
-
           {/* Social CTAs */}
           <div className="flex justify-center gap-4 mb-12">
             <a
