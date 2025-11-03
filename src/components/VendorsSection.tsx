@@ -64,7 +64,7 @@ const VendorsSection = () => {
         </div>
 
         <div className="text-center">
-          <Link to="/standistas">
+          <a href="https://www.estandes.alucardanimes.com" target="_blank" rel="noopener noreferrer">
             <Button 
               size="lg" 
               className="text-lg px-12 py-7 bg-gradient-to-r from-accent to-primary hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-full font-bold"
@@ -72,7 +72,7 @@ const VendorsSection = () => {
               <Store className="mr-2 h-5 w-5" />
               QUERO SER EXPOSITOR
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
