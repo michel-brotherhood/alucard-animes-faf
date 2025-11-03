@@ -112,6 +112,12 @@ const Header = () => {
             </div>
             
             <Link 
+              to="/quem-somos" 
+              className="px-4 py-2 text-white text-sm font-semibold hover:bg-white/10 transition-colors rounded-full"
+            >
+              Quem somos
+            </Link>
+            <Link 
               to="/ajuda" 
               className="px-4 py-2 text-white text-sm font-semibold hover:bg-white/10 transition-colors rounded-full"
             >
@@ -255,6 +261,13 @@ const Header = () => {
 
                 <div className="border-t border-white/20 my-2"></div>
                 
+                <Link 
+                  to="/quem-somos" 
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-white font-semibold py-2.5 px-3 rounded-full hover:bg-white/10 transition-colors"
+                >
+                  Quem somos
+                </Link>
                 <Link 
                   to="/ajuda" 
                   onClick={() => setIsMenuOpen(false)}
