@@ -21,8 +21,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -67,6 +65,7 @@ const OEvento = () => {
 
           {/* Event Photos Carousel */}
           <div className="mb-12">
+            <p className="text-white/70 text-sm text-center mb-4">algumas fotos da última edição</p>
             <Carousel
               opts={{
                 align: "start",
@@ -74,7 +73,7 @@ const OEvento = () => {
               }}
               plugins={[
                 Autoplay({
-                  delay: 3000,
+                  delay: 2000,
                 }),
               ]}
               className="w-full"
@@ -94,30 +93,28 @@ const OEvento = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-2" />
-              <CarouselNext className="right-2" />
             </Carousel>
           </div>
 
           {/* Social CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <a 
-              href="https://www.instagram.com/friburgogeek/" 
-              target="_blank" 
+          <div className="flex justify-center gap-4 mb-12">
+            <a
+              href="https://www.instagram.com/friburgogeek/"
+              target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg transition-all hover:scale-105"
+              className="bg-white/10 backdrop-blur-sm border-2 border-accent/30 rounded-full p-4 hover:bg-accent/20 hover:scale-110 transition-all"
+              aria-label="Instagram Friburgo Geek"
             >
-              <Instagram className="w-6 h-6" />
-              Seguir no Instagram
+              <Instagram className="w-6 h-6 text-accent" />
             </a>
-            <a 
-              href="https://www.facebook.com/friburgogeek" 
-              target="_blank" 
+            <a
+              href="https://www.facebook.com/friburgogeek"
+              target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg transition-all hover:scale-105"
+              className="bg-white/10 backdrop-blur-sm border-2 border-accent/30 rounded-full p-4 hover:bg-accent/20 hover:scale-110 transition-all"
+              aria-label="Facebook Friburgo Geek"
             >
-              <Facebook className="w-6 h-6" />
-              Curtir no Facebook
+              <Facebook className="w-6 h-6 text-accent" />
             </a>
           </div>
 
