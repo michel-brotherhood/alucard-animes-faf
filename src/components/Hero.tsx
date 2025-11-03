@@ -13,7 +13,7 @@ const Hero = () => {
             {/* Left Content */}
             <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
               <h1 className="text-3xl md:text-4xl xl:text-6xl font-black text-foreground leading-[1.1] tracking-tight max-w-lg">
-                O maior evento <span className="text-accent">geek</span> de Nova Friburgo
+                A Maior experiência <span className="text-accent">geek</span> de Nova Friburgo
               </h1>
               
               <div className="h-1 w-20 md:w-32 bg-foreground"></div>
