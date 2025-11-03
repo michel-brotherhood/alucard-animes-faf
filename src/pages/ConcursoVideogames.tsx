@@ -148,8 +148,7 @@ const ConcursoVideogames = () => {
               <div>
                 <h4 className="font-bold text-xl mb-3 text-primary">Premiação</h4>
                 <p className="text-muted-foreground mb-2">
-                  Os vencedores de cada campeonato receberão premiação em dinheiro. 
-                  Detalhes sobre os valores serão divulgados durante o evento.
+                  R$ 100,00 de premiação para cada campeonato.
                 </p>
               </div>
 
