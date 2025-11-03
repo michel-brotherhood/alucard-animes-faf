@@ -11,7 +11,7 @@ const MapSection = () => {
               LOCALIZAÇÃO
             </h2>
           </div>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed">
             Sindicato Dos Têxteis - Rua Augusto Spinelli, 84 - Centro<br />
             Nova Friburgo - RJ | CEP: 28610-190
           </p>
