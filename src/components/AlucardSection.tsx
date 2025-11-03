@@ -23,28 +23,8 @@ const AlucardSection = () => {
         {/* Content */}
         <div className="bg-white/10 backdrop-blur-sm border-2 border-accent/30 rounded-3xl p-8 md:p-12 mb-8">
           <div className="prose prose-invert max-w-none">
-            <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6">
-              A história da Alucard Animes começa em 2003, quando a cena de animes e cultura geek no Brasil estava em plena expansão, mas o mercado ainda era carente de opções para os fãs. Naquela época, o acesso a produtos relacionados a animes, videogames e cultura pop ainda era limitado, e muitos fãs se viam obrigados a recorrer a opções importadas ou de difícil acesso. Foi nesse cenário que a Alucard Animes surgiu, fundada por Roberto Riedl Junior e o Grupo CVG MANGÁ, amigos apaixonados pela cultura geek e motivados pela necessidade de preencher essa lacuna no mercado.
-            </p>
-
-            <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6">
-              O primeiro passo da empresa foi focar na venda de DVDs de animes, que naquela época eram itens difíceis de encontrar no Brasil. Muitos fãs tinham dificuldade em assistir aos seus animes favoritos devido à falta de opções de compra e à escassez de lançamentos no mercado nacional. A Alucard Animes, então, tornou-se uma referência para aqueles que desejavam adquirir DVDs de animes, oferecendo não apenas os títulos mais populares, mas também lançamentos exclusivos que conquistaram uma base fiel de consumidores.
-            </p>
-
-            <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6">
-              Além dos DVDs, a Alucard Animes percebeu que o público estava cada vez mais sedento por produtos geeks em geral, como videogames, action figures, roupas temáticas e outros artigos de cultura pop. Foi então que a empresa expandiu seu portfólio, passando a comercializar uma vasta gama de produtos voltados para todos os fãs de animes, games e geek culture. A cada ano, novos produtos eram adicionados ao catálogo, sempre com o intuito de atender às necessidades dos seus clientes, que buscavam um lugar especializado onde pudessem encontrar tudo relacionado ao seu universo de paixão.
-            </p>
-
-            <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6">
-              Mas a Alucard Animes não se limitou apenas à venda de produtos. Sabendo da importância de conectar as pessoas e criar uma comunidade, a empresa começou a organizar eventos de animes, onde fãs podiam se reunir, trocar ideias, assistir a shows e participar de atividades temáticas. Esses eventos tornaram-se cada vez mais populares, atraindo não apenas os fãs de animes, mas também aqueles que se identificavam com a cultura geek como um todo. De pequenas convenções a grandes eventos, a Alucard Animes sempre buscou proporcionar experiências inesquecíveis para seu público, criando um ambiente acolhedor e vibrante.
-            </p>
-
-            <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6">
-              Com o passar dos anos, a empresa se consolidou como um dos maiores nomes do mercado de animes e cultura geek do Brasil. A Alucard Animes não apenas acompanhou a evolução do mercado, mas também se antecipou às tendências, trazendo aos fãs produtos exclusivos, lançamentos antecipados e uma curadoria cuidadosa de itens e eventos que conquistaram o coração do público.
-            </p>
-
             <p className="text-white/90 text-base md:text-lg leading-relaxed">
-              Hoje, após mais de duas décadas de história, a Alucard Animes continua a ser referência, mantendo sua essência de compromisso com a qualidade, inovação e paixão pela cultura geek. A empresa segue como um elo entre os fãs e seus universos favoritos, mostrando que, por trás de cada DVD vendido, de cada produto geek oferecido, e de cada evento realizado, existe uma verdadeira história de dedicação e amor por um mercado que só cresce e encanta cada vez mais.
+              A Alucard Animes nasceu em 2003 para preencher a lacuna de produtos de anime e cultura geek no Brasil: fundada por Roberto Riedl Junior e pelo Grupo CVG MANGÁ, começou com DVDs raros e exclusivos e virou referência. Com a demanda em alta, expandiu para games, action figures, roupas e outros itens, sempre renovando o catálogo. Em paralelo, puxou eventos que reuniam fãs e fortaleceram a comunidade. Com o tempo, consolidou-se como um dos principais nomes do setor, antecipando tendências e oferecendo lançamentos e curadoria. Hoje segue conectando fãs aos seus universos favoritos, com foco em qualidade, inovação e paixão......
             </p>
           </div>
         </div>
