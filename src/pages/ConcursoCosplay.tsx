@@ -88,13 +88,13 @@ const ConcursoCosplay = () => {
     <div className="min-h-screen relative overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
         style={{
           backgroundImage: `url(${cosplay1})`,
           filter: 'blur(3px)',
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-secondary via-primary to-secondary opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-secondary via-primary to-secondary opacity-75" />
       
       {/* Content */}
       <div className="relative z-10">
