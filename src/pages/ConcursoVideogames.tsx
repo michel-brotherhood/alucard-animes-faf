@@ -9,6 +9,7 @@ import streetFighter from "@/assets/street-fighter-6.png";
 import tekken8 from "@/assets/tekken-8.png";
 import justDance from "@/assets/just-dance.jpg";
 import fifa2025 from "@/assets/fifa-2025.jpg";
+import gamesBackground from "@/assets/games-background.jpg";
 
 const ConcursoVideogames = () => {
   const jogos = [
@@ -40,8 +41,20 @@ const ConcursoVideogames = () => {
   ];
 
   return (
-    <div className="min-h-screen overflow-x-hidden">
-      <Header />
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
+        style={{
+          backgroundImage: `url(${gamesBackground})`,
+          filter: 'blur(3px)',
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-background to-muted opacity-85" />
+      
+      {/* Content */}
+      <div className="relative z-10">
+        <Header />
       
       <section className="py-16 px-4 bg-gradient-to-b from-background to-muted">
         <div className="container mx-auto max-w-7xl">
@@ -176,8 +189,9 @@ const ConcursoVideogames = () => {
         </div>
       </section>
 
-      <Footer />
-      <FloatingMenu />
+        <Footer />
+        <FloatingMenu />
+      </div>
     </div>
   );
 };
