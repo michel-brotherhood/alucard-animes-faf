@@ -14,6 +14,7 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { supabase } from "@/integrations/supabase/client";
+import cosplay1 from "@/assets/cosplay-1.jpg";
 
 const formSchema = z.object({
   nome: z.string().min(3, "Nome deve ter no mínimo 3 caracteres").max(100),
@@ -84,8 +85,20 @@ const ConcursoCosplay = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-secondary via-primary to-secondary">
-      <Header />
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        style={{
+          backgroundImage: `url(${cosplay1})`,
+          filter: 'blur(3px)',
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-secondary via-primary to-secondary opacity-90" />
+      
+      {/* Content */}
+      <div className="relative z-10">
+        <Header />
       
       <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
@@ -563,8 +576,9 @@ const ConcursoCosplay = () => {
         </div>
       </section>
 
-      <Footer />
-      <FloatingMenu />
+        <Footer />
+        <FloatingMenu />
+      </div>
     </div>
   );
 };
